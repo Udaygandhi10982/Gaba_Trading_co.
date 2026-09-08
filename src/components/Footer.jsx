@@ -2,21 +2,23 @@ import { Building2, Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { BUSINESS_WHATSAPP_NUMBER } from '../utils/whatsapp';
 
 const quickLinks = [
+  { label: 'Home', href: '#' },
   { label: 'About Us', href: '#about' },
-  { label: 'Offerings', href: '#offerings' },
   { label: 'Products', href: '#products' },
   { label: 'Categories', href: '#categories' },
+  { label: 'Deals', href: '#products' },
   { label: 'Contact Us', href: '#contact' },
-  { label: 'Feedbacks', href: '#contact' },
 ];
 
-const categories = [
-  { label: 'Cement', href: '#categories' },
-  { label: 'Steel & TMT', href: '#categories' },
-  { label: 'Bricks & Blocks', href: '#categories' },
-  { label: 'Plumbing', href: '#categories' },
-  { label: 'Electrical', href: '#categories' },
-  { label: 'View All', href: '#categories' },
+const footerCategories = [
+  { label: 'Faucets & Taps', href: '#categories' },
+  { label: 'Showers', href: '#categories' },
+  { label: 'Health & Jet Sprays', href: '#categories' },
+  { label: 'uPVC Fittings', href: '#categories' },
+  { label: 'CPVC Fittings', href: '#categories' },
+  { label: 'Brass Insert Fittings', href: '#categories' },
+  { label: 'Pipes & Hoses', href: '#categories' },
+  { label: 'Valves & Spindles', href: '#categories' },
 ];
 
 export default function Footer() {
@@ -36,28 +38,17 @@ export default function Footer() {
               <div>
                 <p className="font-black text-xl leading-tight tracking-tight">GABA</p>
                 <p className="text-[#F59E0B] text-[10px] font-bold tracking-widest uppercase">
-                  Trading Company
+                  Sanitary Specialist
                 </p>
               </div>
             </div>
             
             <p className="text-white/60 text-xs leading-relaxed mb-6 max-w-sm">
-              Quality building materials for your project. Reliable supply. Trusted service.
+              Premium sanitary products for modern bathrooms. Reliable supply. Trusted service.
             </p>
 
             {/* Social Media Link Badges (matches visual circles) */}
             <div className="flex items-center gap-3">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-[#1877F2] hover:scale-110 transition-transform flex items-center justify-center text-white"
-                aria-label="Facebook"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5">
-                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z"/>
-                </svg>
-              </a>
               <a
                 href="https://www.instagram.com/gabatradingco?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
                 target="_blank"
@@ -69,17 +60,6 @@ export default function Footer() {
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                </svg>
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-[#FF0000] hover:scale-110 transition-transform flex items-center justify-center text-white"
-                aria-label="Youtube"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5">
-                  <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.52 3.5 12 3.5 12 3.5s-7.52 0-9.388.555a3.003 3.003 0 0 0-2.11 2.108C0 8.03 0 12 0 12s0 3.97.502 5.837a3.003 3.003 0 0 0 2.11 2.108C4.48 20.5 12 20.5 12 20.5s7.52 0 9.388-.555a3.003 3.003 0 0 0 2.11-2.108C24 15.97 24 12 24 12s0-3.97-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                 </svg>
               </a>
               <a
@@ -121,7 +101,7 @@ export default function Footer() {
               Categories
             </h4>
             <ul className="space-y-2.5">
-              {categories.map(cat => (
+              {footerCategories.map(cat => (
                 <li key={cat.label}>
                   <a
                     href={cat.href}
@@ -146,10 +126,10 @@ export default function Footer() {
                   <Phone size={13} />
                 </div>
                 <a
-                  href="tel:+918360774127"
+                  href="tel:+919592959541"
                   className="text-white/70 text-xs hover:text-white transition-colors"
                 >
-                  +91 83607 74127
+                  +91 9592 959541
                 </a>
               </li>
 
@@ -159,10 +139,10 @@ export default function Footer() {
                   <Mail size={13} />
                 </div>
                 <a
-                  href="mailto:gababuildingmaterial@gmail.com"
+                  href="mailto:gabatradingco57@gmail.com"
                   className="text-white/70 text-xs hover:text-white transition-colors break-all"
                 >
-                  gababuildingmaterial@gmail.com
+                  gabatradingco57@gmail.com
                 </a>
               </li>
 
@@ -171,9 +151,14 @@ export default function Footer() {
                 <div className="w-7 h-7 bg-[#F59E0B]/10 border border-[#F59E0B]/20 rounded-lg flex items-center justify-center text-[#F59E0B] shrink-0 mt-0.5">
                   <MapPin size={13} />
                 </div>
-                <span className="text-white/70 text-xs leading-normal">
-                  Ludhiana, Punjab, India
-                </span>
+                <a
+                  href="https://share.google/nMOgeKsZ3s7aXNxhu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 text-xs leading-normal hover:text-white transition-colors"
+                >
+                  Main Road Kabir Nagar, Basti Jodhewal,<br />Ludhiana, Punjab – 141007
+                </a>
               </li>
 
               {/* Hours */}
@@ -182,10 +167,8 @@ export default function Footer() {
                   <Clock size={13} />
                 </div>
                 <div className="text-white/70 text-[11px] leading-relaxed">
-                  <p className="font-bold text-white/90">Open Daily (except Sunday)</p>
+                  <p className="font-bold text-white/90">Open Daily (Closed Sunday)</p>
                   <p>9:00 AM - 7:00 PM</p>
-                  <p className="mt-0.5 font-bold text-white/90">Sunday:</p>
-                  <p>11:00 AM - 4:00 PM</p>
                 </div>
               </li>
             </ul>

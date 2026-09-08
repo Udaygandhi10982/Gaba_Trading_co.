@@ -5,20 +5,20 @@ const galleryVideos = [
   {
     id: 1,
     src: '/videos/gaba-video-1.mp4',
-    title: 'Store Front & Building Supplies',
-    subtitle: 'Premium construction yard',
+    title: 'Faucets & Taps',
+    subtitle: 'Premium bathroom fittings',
   },
   {
     id: 2,
     src: '/videos/gaba-video-2.mp4',
-    title: 'Plumbing & Hardware Warehouse',
-    subtitle: 'Astral & top fittings stock',
+    title: 'Bathroom Collections',
+    subtitle: 'Modern sanitary designs',
   },
   {
     id: 3,
     src: '/videos/gaba-video-3.mp4',
-    title: 'Logistics & Dispatch Operations',
-    subtitle: 'On-time delivery vehicles loading',
+    title: 'Sanitary Showroom',
+    subtitle: 'Explore our latest products',
   },
 ];
 
@@ -55,17 +55,17 @@ export default function GABAInAction() {
           <h2 className="text-3xl sm:text-4xl font-black text-white leading-tight mb-4">
             See GABA
             <br />
-            <span className="text-[#F59E0B]">in Action</span>
+            <span className="text-[#F59E0B]">Sanitary in Action</span>
           </h2>
           <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-sm">
-            Take a look at our store, warehouse, stocks, and delivery operations through real video clips.
+            Take a look at our sanitary products, collections, and showroom through real video clips.
           </p>
           <div>
             <button
               onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-[#F59E0B] text-[#071421] font-bold px-6 py-3 rounded-xl hover:bg-[#FFB21A] transition-all duration-200 text-xs shadow-lg shadow-[#F59E0B]/20"
             >
-              View Materials Catalog
+              View Sanitary Catalog
             </button>
           </div>
         </div>

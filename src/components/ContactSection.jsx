@@ -5,26 +5,28 @@ const contactItems = [
   {
     icon: MapPin,
     label: 'Address',
-    value: 'GABA Trading Company, [Address], [City], [State] – [PIN]',
+    value: 'Main Road Kabir Nagar, Basti Jodhewal, Ludhiana, Punjab – 141007',
+    href: 'https://share.google/nMOgeKsZ3s7aXNxhu',
+    external: true,
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91 83607 74127',
-    href: 'tel:+918360774127',
+    value: '+91 9592 959541',
+    href: 'tel:+919592959541',
   },
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+91 XXXXX XXXXX (Chat)',
+    value: '+91 9592 959541 (Chat on WhatsApp)',
     href: `https://wa.me/${BUSINESS_WHATSAPP_NUMBER}`,
     external: true,
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'contact@gababuildingmaterial.com',
-    href: 'mailto:contact@gababuildingmaterial.com',
+    value: 'gabatradingco57@gmail.com',
+    href: 'mailto:gabatradingco57@gmail.com',
   },
   {
     icon: Clock,
@@ -32,6 +34,7 @@ const contactItems = [
     value: 'Mon – Sat: 9:00 AM – 7:00 PM',
   },
 ];
+
 
 export default function ContactSection() {
   return (
@@ -78,7 +81,7 @@ export default function ContactSection() {
             {/* CTA Buttons */}
             <div className="flex gap-3 pt-2">
               <a
-                href="https://maps.google.com"
+                href="https://www.google.com/maps/dir/?api=1&destination=GABA+Sanitary+Specialist,+Main+Road+Kabir+Nagar,+Basti+Jodhewal,+Ludhiana,+Punjab+141007"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-[#071421] text-[#071421] font-bold text-sm hover:bg-[#071421] hover:text-white transition-all duration-200"
@@ -106,10 +109,10 @@ export default function ContactSection() {
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#071421]/50">
               <MapPin size={40} className="text-[#F59E0B] mb-2" />
-              <p className="text-white font-bold">GABA Trading Company</p>
-              <p className="text-white/80 text-sm">Location Placeholder</p>
+              <p className="text-white font-bold">GABA Sanitary Specialist</p>
+              <p className="text-white/80 text-sm text-center px-4">Kabir Nagar, Basti Jodhewal, Ludhiana – 141007</p>
               <a
-                href="https://maps.google.com"
+                href="https://www.google.com/maps/place/Gaba+Trading+Co./@30.9315757,75.8609088,17z/data=!3m1!4b1!4m6!3m5!1s0x391a8342a8d7346d:0xa3bdf0f8d4da25a6!8m2!3d30.9315757!4d75.8634837!16s%2Fg%2F11zfhmh80l?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 bg-[#F59E0B] text-[#071421] font-bold px-5 py-2 rounded-lg text-sm hover:bg-[#FFB21A] transition-colors"

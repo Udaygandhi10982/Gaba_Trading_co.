@@ -4,22 +4,22 @@ const reasons = [
   {
     icon: BadgeCheck,
     title: 'Quality Assured',
-    description: 'We only source materials from trusted manufacturers — tested for strength, durability, and standards compliance.',
+    description: 'Quality sanitary products sourced from trusted manufacturers — tested for durability and performance.',
   },
   {
     icon: Tag,
     title: 'Wide Product Range',
-    description: 'Competitive rates across all categories. Get more value per rupee without compromising on quality.',
+    description: 'From faucets to bathroom accessories — everything your bathroom needs under one roof.',
   },
   {
     icon: PackageCheck,
     title: 'Reliable Supply',
-    description: 'Consistent stock availability so your project never stops. We deliver on time, every time.',
+    description: 'Consistent availability and professional service. The right product, always in stock.',
   },
   {
     icon: MessageCircle,
     title: 'Easy Ordering',
-    description: 'Order directly on WhatsApp. Browse, add to cart, and send your complete order in seconds.',
+    description: 'Order directly through WhatsApp. Browse, select, and send your order in seconds.',
   },
 ];
 
@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
           Why Choose <span className="text-[#F59E0B]">GABA?</span>
         </h2>
         <p className="text-white/60 mb-8 max-w-md text-sm">
-          We are committed to delivering the best construction material experience.
+          We are committed to delivering the best sanitary product experience for every bathroom.
         </p>
 
         {/* 4 cards */}

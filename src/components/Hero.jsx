@@ -6,17 +6,17 @@ const features = [
   {
     icon: Shield,
     title: 'Premium Quality',
-    subtitle: 'Tested & Durable Materials',
+    subtitle: 'Reliable sanitary products',
   },
   {
     icon: Truck,
-    title: 'Reliable Delivery',
-    subtitle: 'On Time, Every Time',
+    title: 'Wide Product Range',
+    subtitle: 'Everything for your bathroom',
   },
   {
     icon: HeadphonesIcon,
     title: 'Customer Support',
-    subtitle: 'Always Here To Help',
+    subtitle: 'Always here to help',
   },
 ];
 
@@ -110,23 +110,23 @@ export default function Hero() {
           <h1 className="text-white font-black leading-tight mb-3 select-none">
             <span className="block text-4xl sm:text-6xl md:text-7xl tracking-tight">GABA</span>
             <span className="block text-lg sm:text-2xl md:text-3xl text-[#F59E0B] tracking-wide mt-0.5 uppercase">
-              TRADING COMPANY
+              SANITARY SPECIALIST
             </span>
           </h1>
 
           {/* Tagline */}
           <p className="text-white font-bold text-lg sm:text-2xl md:text-3xl mb-1.5 leading-tight">
-            "Everything You Need to Build Better."
+            "Everything You Need for a Perfect Bathroom."
           </p>
 
           {/* Tagline Secondary */}
           <p className="text-[#F59E0B] text-xs sm:text-sm md:text-base font-semibold tracking-wide mb-3">
-            From foundation to finishing, we have you covered.
+            Premium Sanitary Products. <span className="underline underline-offset-2">Premium Deals.</span>
           </p>
 
           {/* Supporting text */}
           <p className="text-white/70 text-xs sm:text-sm md:text-base mb-6 sm:mb-8 leading-relaxed max-w-sm sm:max-w-md">
-            Quality products. Reliable supply. Delivered to your site.
+            Premium sanitary products, modern designs, and reliable service for your bathroom.
           </p>
 
           {/* Buttons */}
@@ -138,7 +138,7 @@ export default function Hero() {
               }}
               className="bg-[#F59E0B] text-[#071421] font-bold px-5 py-2.5 sm:px-7 sm:py-3 rounded-lg hover:bg-[#FFB21A] active:scale-95 transition-all duration-150 flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs shadow-lg shadow-[#F59E0B]/30 cursor-pointer"
             >
-              Shop Products <ArrowRight size={14} />
+              Shop Sanitary Deals <ArrowRight size={14} />
             </button>
             <a
               href={`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}`}

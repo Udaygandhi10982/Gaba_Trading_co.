@@ -1,33 +1,33 @@
-import { Building2, Wrench, Zap, Paintbrush } from 'lucide-react';
+import { Droplets, ShowerHead, Rows3, Sparkles } from 'lucide-react';
 
 const offerings = [
   {
-    id: 'construction',
-    label: 'Construction Materials',
-    sub: 'Cement, Steel, Bricks & More',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80',
-    icon: Building2,
+    id: 'essentials',
+    label: 'Bathroom Essentials',
+    sub: 'Basins, WC, Faucets',
+    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500&q=80',
+    icon: Droplets,
   },
   {
-    id: 'plumbing',
-    label: 'Plumbing Solutions',
-    sub: 'Pipes, Fittings, Accessories',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80',
-    icon: Wrench,
+    id: 'fittings',
+    label: 'Premium Fittings',
+    sub: 'Showers, Mixers, Taps',
+    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500&q=80',
+    icon: ShowerHead,
   },
   {
-    id: 'electrical',
-    label: 'Electrical Essentials',
-    sub: 'Wires, Switches, Cables & More',
-    image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&q=80',
-    icon: Zap,
+    id: 'accessories',
+    label: 'Bathroom Accessories',
+    sub: 'Rods, Hooks, Shelves',
+    image: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=500&q=80',
+    icon: Rows3,
   },
   {
-    id: 'finishing',
-    label: 'Finishing Materials',
-    sub: 'Tiles, Paints, Hardware & Accessories',
-    image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&q=80',
-    icon: Paintbrush,
+    id: 'designer',
+    label: 'Designer Collections',
+    sub: 'Mirrors, Cabinets',
+    image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=500&q=80',
+    icon: Sparkles,
   },
 ];
 
@@ -38,7 +38,7 @@ export default function OfferingsSection() {
 
   return (
     <section className="bg-[#071421] py-16 px-4 relative overflow-hidden">
-      {/* Background blueprint wireframe sketch (subtle CSS outline drawing) */}
+      {/* Subtle background decoration */}
       <div className="absolute left-4 bottom-4 w-72 h-72 opacity-5 pointer-events-none hidden lg:block">
         <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" className="text-white w-full h-full">
           <path d="M10 90 L10 50 L50 20 L90 50 L90 90 Z" strokeWidth="1" />
@@ -55,16 +55,16 @@ export default function OfferingsSection() {
           <div className="flex items-center gap-2 mb-2">
             <span className="w-1.5 h-4 bg-[#F59E0B] rounded-full inline-block" />
             <p className="text-[#F59E0B] text-xs font-black uppercase tracking-widest">
-              WHAT WE PROVIDE
+              WHAT WE OFFER
             </p>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-white leading-tight mb-6">
             Everything You Need
             <br />
-            Under One Roof
+            for Your Bathroom
           </h2>
           <p className="text-white/50 text-sm leading-relaxed max-w-sm">
-            We supply high-grade components for building shells, wiring networks, plumbing, and structural finishes.
+            From premium faucets to designer basins, showers and bathroom accessories, find everything you need to complete your bathroom.
           </p>
         </div>
 
@@ -87,6 +87,7 @@ export default function OfferingsSection() {
                         src={item.image}
                         alt={item.label}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
                       />
                     </div>
 

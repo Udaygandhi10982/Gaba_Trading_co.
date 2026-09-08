@@ -73,7 +73,7 @@ export default function Navbar({ activeSection = 'home', searchQuery, onSearch }
             </div>
             <div className="flex flex-col leading-tight">
               <span className="text-white font-black text-xl tracking-tight">GABA</span>
-              <span className="text-[#F59E0B] font-semibold text-[10px] tracking-widest uppercase">Trading Company</span>
+              <span className="text-[#F59E0B] font-semibold text-[10px] tracking-widest uppercase">Sanitary Specialist</span>
             </div>
           </a>
 

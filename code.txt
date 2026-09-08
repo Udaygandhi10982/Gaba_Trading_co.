@@ -1,0 +1,54 @@
+====================================================================================================
+GABA SANITARY SPECIALIST — MASTER PRODUCT & CODE TRACKING SHEET
+====================================================================================================
+Generated for Catalog Management, WhatsApp Inquiries & Inventory
+Website Reference: http://localhost:5173/ | Mobile Web App: http://localhost:5173/app
+====================================================================================================
+
+CODE     | ITEM NAME                            | SIZES / DIMENSIONS                   | PACKET / BUNDLE OPTIONS             | MATERIAL & SPECIFICATIONS
+---------+--------------------------------------+--------------------------------------+-------------------------------------+---------------------------------------------------------
+GTC001   | Brass Nozzel Cock                    | 1/2" (15mm)                          | 1 Pc, 10 Pcs Pkt, 50 Pcs Box        | Solid Brass Body, Approx Wt: 190g, Heavy Spindle
+GTC002   | CI Nozzel Cock                       | 1/2" (15mm)                          | 1 Pc, 10 Pcs Pkt, 50 Pcs Box        | Cast Iron Body, Brass Inner Disc, Heavy Handle Patti
+GTC003   | CI Nozzel Cock (Jumper Valve)        | 1/2" (15mm)                          | 1 Pc, 10 Pcs Pkt, 50 Pcs Box        | Cast Iron Body, Precision Brass Jumper Valve
+GTC004   | CI Nozzel Cock (Round Handle)        | 1/2" (15mm)                          | 1 Pc, 10 Pcs Pkt, 50 Pcs Box        | Cast Iron Body, Brass Inner Parts, Ergonomic Round Knob
+GTC005   | C P Nozzel Cock                      | 1/2" (15mm)                          | 1 Pc, 10 Pcs Pkt, 50 Pcs Box        | Heavy Chrome Plated Brass/Alloy, High Mirror Polish
+GTC006   | CI CP Long Body Tap                  | 1/2" (15mm)                          | 1 Pc, 10 Pcs Pkt, 50 Pcs Box        | Extended Long Spout, Brass Inner Disc, Chrome Finished
+GTC007   | CI CP Pillar Cock                    | 1/2" (15mm)                          | 1 Pc, 10 Pcs Pkt, 50 Pcs Box        | Deck/Basin Mounted Pillar Tap, Brass Inner Disc
+GTC008   | Premium PVC Bib Cock (Short Body)    | 15mm (1/2")                          | 10 Pcs Pkt, 50 Pcs Pkt              | High Grade Virgin PVC, Smooth Blue Knob, Leak-proof
+GTC009   | Premium PVC Bib Cock (Long Body)     | 15mm (1/2")                          | 10 Pcs Pkt, 50 Pcs Pkt              | Extended Reach PVC Body, Heavy Seal Flange Included
+GTC010   | Premium PVC Nozzel Cock (Short Body) | 15mm (1/2")                          | 10 Pcs Pkt, 50 Pcs Pkt              | Hose Barb/Nozzle Spout, Heavy Grade PVC, Blue Turn Handle
+GTC011   | A2 Lite Disc Spindle                 | 1/2"                                 | 20 Pcs Pkt, 50 Pcs Pkt              | Brass Spindle Valve Core, Weight: 40 grams
+GTC012   | A2 Heavy Disc Spindle                | 1/2"                                 | 20 Pcs Pkt, 50 Pcs Pkt              | Extra Heavy Brass Spindle Valve Core, Weight: 46 grams
+GTC013   | S.S Connection Pipe (Braided)        | 18", 24", 30", 36"                   | 10 Pcs Pkt, 25 Pcs Pkt, 50 Pcs Box  | High-Tensile SS 304 Braid, Chrome Plated Nuts & Washers
+GTC014   | Hex Nipple (SS 304)                  | 1/2"                                 | 25 Pcs Pkt, 50 Pcs Pkt, 100 Pcs Box | 100% Grade 304 Stainless Steel, CNC Threaded Hexagon
+GTC015   | Jet Spray (Regular Fitting)          | Standard Fitting                     | 1 Pc, 10 Pcs Pkt                    | Stainless Steel Flexible Hose, Ergonomic Jet Wand & Clamp
+GTC016   | Jet Spray (One Piece Fitting)        | One Piece Heavy                      | 1 Pc, 10 Pcs Pkt                    | Heavy One-Piece SS Design with Reinforced Braided Hose
+GTC017   | Overhead Shower (Ultra Slim)         | 4", 6", 8" Square                    | 1 Pc, 5 Pcs Box, 20 Pcs Master      | Ultra Slim Mirror Finish SS 304, Self-cleaning Nozzles
+GTC018   | Overhead Shower (Amaze Design)       | 6", 8" Geometric Pattern             | 1 Pc, 5 Pcs Box, 20 Pcs Master      | Maze Water Distribution Channels, SS 304 Construction
+GTC019   | Health Faucet Kit (ABS + SS 304)     | 1.0 Meter Tube                       | 1 Pc, 10 Pcs Box, 50 Pcs Master     | Heavy Duty ABS Trigger Head, 304 SS Flexible Tube & Wall Hook
+GTC020   | uPVC Elbow Plain (White)             | 1/2×1/2, 1×1, 1½×1½, 1×1/2           | 100 Pcs Pkt, 50 Pcs Pkt, 20 Pcs Pkt | High Impact White uPVC, Lead-Free Plumbing Grade
+GTC021   | uPVC TEE Plain (White)               | 1/2×1/2, 1×1, 1½×1½, 1×1/2           | 50 Pcs Pkt, 25 Pcs Pkt, 10 Pcs Pkt  | 3-Way Equal/Reducing TEE, Smooth Hydraulic Bore
+GTC022   | uPVC Coupler (White)                 | 1/2×1/2, 1×1, 1½×1½, 1×1/2           | 100 Pcs Pkt, 50 Pcs Pkt, 25 Pcs Pkt | Straight Socket Joint Coupler, High Pressure Weld Fit
+GTC023   | uPVC Union (White)                   | 1/2×1/2, 1×1, 1½×1½                  | 50 Pcs Pkt, 25 Pcs Pkt, 10 Pcs Pkt  | 3-Piece Disconnectable Union with EPDM O-Ring Seal
+GTC024   | uPVC Elbow Brass Insert (White)      | 1/2×1/2, 1×1, 1×1/2                  | 50 Pcs Pkt, 25 Pcs Pkt              | Heavy Molded-in Female Brass Threads, Zero Leakage
+GTC025   | uPVC MTA Brass (White)               | 1/2×1/2, 1×1, 1×1/2                  | 50 Pcs Pkt                          | Male Threaded Adapter with Solid Brass Outer Thread
+GTC026   | uPVC TEE Brass (White)               | 1/2×1/2, 1×1, 1×1/2                  | 50 Pcs Pkt, 25 Pcs Pkt              | 3-Way TEE with Brass Female Centre Thread
+GTC027   | Tank Nipple Threaded (White)         | 1/2×1/2, 1×1, 1½×1½                  | 50 Pcs Pkt, 25 Pcs Pkt              | Double Threaded Water Tank Connector with Rubber Gasket
+GTC028   | Tank Nipple Socket (White)           | 1/2×1/2, 1×1, 1½×1½                  | 50 Pcs Pkt, 25 Pcs Pkt              | Socket-to-Thread Tank Adaptor with Tightening Hex Nut
+GTC029   | uPVC End Cap (White)                 | 1/2", 1", 1½"                        | 100 Pcs Pkt, 50 Pcs Pkt, 25 Pcs Pkt | Heavy-Duty Pipe End Terminator, Pressure Rated
+GTC030   | uPVC 45° Elbow (White)               | 1/2×1/2, 1×1                         | 100 Pcs Pkt, 50 Pcs Pkt             | 45-Degree Direction Bend, Low Flow Resistance
+GTC031   | uPVC Cross TEE (White)               | 1/2×1/2, 1×1                         | 50 Pcs Pkt, 25 Pcs Pkt              | 4-Way Cross Intersection Junction Fitting
+GTC032   | uPVC Ball Valve Long Handle          | 1/2", 1", 1½"                        | 24 Pcs Box, 10 Pcs Box, 5 Pcs Box   | Full Bore Flow, Ergonomic Blue Lever, EPDM Seat Rings
+GTC033   | uPVC Step Over Bend                  | 1/2×1/2, 1×1                         | 25 Pcs Pkt, 20 Pcs Pkt              | Crossover Pipe Bypass Fitting for Layered Plumbing
+GTC034   | Hex Extension Nipple (Steel)         | 1/2×1/2, 1×1                         | 25 Pcs Pkt, 20 Pcs Pkt              | Male-to-Female Hexagonal Extension Connector
+GTC035   | uPVC Pipes ASTM D-1785 (3M & 6M)     | SCH-40 & SCH-80 (1/2", 1", 1½")      | 50, 40, 30, 25, 20, 15, 10, 8 Bundle| ASTM D-1785 Standard, UV Stabilized Pressure Pipe
+GTC036   | CPVC Elbow Plain (Cream)             | 3/4×3/4, 1×1, 1¼×1¼, 1×3/4           | 100 Pcs Pkt, 50 Pcs Pkt, 25 Pcs Pkt | Hot & Cold CPVC 90° Elbow, SDR-11 Pressure Rated
+GTC037   | CPVC TEE Plain (Cream)               | 3/4×3/4, 1×1, 1¼×1¼, 1×3/4           | 100 Pcs Pkt, 50 Pcs Pkt, 25 Pcs Pkt | Hot & Cold 3-Way CPVC TEE Fitting, High Heat Resistant
+GTC038   | CPVC Coupler (Cream)                 | 3/4×3/4, 1×1, 1¼×1¼, 1×3/4           | 100 Pcs Pkt, 50 Pcs Pkt, 25 Pcs Pkt | Straight Socket CPVC Joining Coupler
+GTC039   | CPVC Union (Cream)                   | 3/4×3/4, 1×1, 1¼×1¼                  | 50 Pcs Pkt, 25 Pcs Pkt              | Detachable Hot/Cold Water Line CPVC Union
+GTC040   | CPVC Elbow Brass (Cream)             | 3/4×3/4, 1×1, 1¼×1¼                  | 50 Pcs Pkt, 25 Pcs Pkt              | CPVC 90° Elbow with Heavy Forged Brass Insert
+GTC041   | CPVC MTA Brass (Cream)               | 3/4×1/2, 1×1/2, 1×1                  | 50 Pcs Pkt                          | CPVC Male Threaded Adaptor with Brass Male End
+GTC042   | CPVC FTA Brass (Cream)               | 3/4×1/2, 1×1/2, 1×1                  | 50 Pcs Pkt                          | CPVC Female Threaded Adaptor with Brass Female End
+GTC043   | CPVC TEE Brass (Cream)               | 3/4×1/2, 1×1/2, 1×1                  | 50 Pcs Pkt, 25 Pcs Pkt              | CPVC 3-Way TEE with Centre Brass Thread
+GTC044   | CPVC Tank Nipple Socket (Cream)      | 3/4×3/4, 1×1, 1¼×1¼                  | 50 Pcs Pkt, 25 Pcs Pkt              | Heavy-Duty CPVC Water Tank Socket Connector with Seal
+====================================================================================================

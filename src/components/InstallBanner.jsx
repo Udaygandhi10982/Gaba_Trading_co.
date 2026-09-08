@@ -114,8 +114,12 @@ export default function InstallBanner({ deferredPrompt }) {
 
           {/* MOCK QR CODE PANEL */}
           <div className="flex items-center gap-4 bg-[#0c1a2b] p-3 rounded-xl border border-white/5">
-            <div className="p-1.5 bg-white rounded-lg shadow-sm shrink-0">
-              <QrCode size={48} className="text-[#071421]" />
+            <div className="p-1 bg-white rounded-lg shadow-sm shrink-0">
+              <img 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gababuildingmaterial.com/app&color=071421&bgcolor=ffffff" 
+                alt="App QR Code" 
+                className="w-12 h-12 object-contain"
+              />
             </div>
             <div className="text-left">
               <p className="text-[10px] uppercase tracking-wider text-[#F59E0B] font-bold">App Access</p>

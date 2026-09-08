@@ -26,10 +26,11 @@ export default function ProductGrid({ selectedCategory, searchQuery }) {
       result = result.filter(p => p.category === effectiveCat);
     }
 
-    // Search filter
+    // Search filter (name, category, description, and product code)
     if (effectiveSearch.trim()) {
-      const q = effectiveSearch.toLowerCase();
+      const q = effectiveSearch.toLowerCase().trim();
       result = result.filter(p =>
+        (p.code && p.code.toLowerCase().includes(q)) ||
         p.name.toLowerCase().includes(q) ||
         p.category.toLowerCase().includes(q) ||
         p.description.toLowerCase().includes(q)
@@ -54,11 +55,11 @@ export default function ProductGrid({ selectedCategory, searchQuery }) {
         {/* Heading */}
         <div className="mb-5">
           <p className="text-[#F59E0B] text-xs font-bold uppercase tracking-wider mb-1">
-            POPULAR MATERIALS
+            POPULAR SANITARY PRODUCTS
           </p>
           <div className="flex items-center gap-3">
             <span className="w-1 h-7 bg-[#F59E0B] rounded-full inline-block" />
-            <h2 className="text-2xl font-black text-[#111827]">Our Popular Materials</h2>
+            <h2 className="text-2xl font-black text-[#111827]">Our Popular Products</h2>
           </div>
         </div>
 
@@ -68,7 +69,7 @@ export default function ProductGrid({ selectedCategory, searchQuery }) {
           <div className="relative flex-1 min-w-[200px] max-w-xs">
             <input
               type="text"
-              placeholder="Search building materials..."
+              placeholder="Search sanitary products..."
               value={localSearch}
               onChange={(e) => setLocalSearch(e.target.value)}
               className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg text-sm bg-white focus:outline-none focus:border-[#F59E0B] focus:ring-1 focus:ring-[#F59E0B]"

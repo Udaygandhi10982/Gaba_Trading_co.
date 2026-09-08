@@ -122,7 +122,7 @@ Please share the current price and availability.`;
   // Checkout order template
   const triggerCartWhatsApp = () => {
     if (cartItems.length === 0) return;
-    let message = `Hello GABA TRADING COMPANY,
+    let message = `Hello GABA Sanitary Specialist,
 
 I would like to place an order for the following items:
 
@@ -222,6 +222,14 @@ Thank you.`;
                 alt={activeProduct.name}
                 className="max-h-full max-w-full object-contain"
               />
+
+              {/* GTC Code Badge on Bottom-Right */}
+              {activeProduct.code && (
+                <span className="absolute bottom-3 left-3 bg-[#071421]/95 text-[#FF7A00] border border-[#FF7A00]/40 text-[11px] font-mono font-black px-2 py-0.5 rounded-md shadow-md">
+                  {activeProduct.code}
+                </span>
+              )}
+
               <button 
                 onClick={() => setIsDetailLightboxOpen(true)}
                 className="absolute bottom-3 right-3 bg-white/95 text-gray-700 shadow-md w-9 h-9 rounded-full flex items-center justify-center hover:scale-105 active:scale-95 transition-all cursor-pointer z-10"
@@ -237,62 +245,80 @@ Thank you.`;
                   <button
                     key={idx}
                     onClick={() => setDetailImgIndex(idx)}
-                    className={`w-2.5 h-2.5 rounded-full transition-all ${detailImgIndex === idx ? 'bg-[#F59E0B] w-5' : 'bg-gray-200'}`}
+                    className={`w-2.5 h-2.5 rounded-full transition-all ${detailImgIndex === idx ? 'bg-[#FF7A00] w-5' : 'bg-gray-200'}`}
                   />
                 ))}
               </div>
             )}
 
             {/* Title Block */}
-            <span className="text-[#F59E0B] text-[10px] font-black uppercase tracking-wider block mb-1">{activeProduct.category}</span>
+            <div className="flex items-center justify-between gap-2 mb-1">
+              <span className="text-[#FF7A00] text-[10px] font-black uppercase tracking-wider block">{activeProduct.category}</span>
+              {activeProduct.code && (
+                <span className="bg-[#071421] text-[#FF7A00] text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-[#FF7A00]/30">
+                  {activeProduct.code}
+                </span>
+              )}
+            </div>
             <h2 className="text-xl font-black text-gray-900 leading-tight mb-1">{activeProduct.name}</h2>
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs text-gray-500 font-semibold bg-gray-100 px-2 py-0.5 rounded-md">ID: {activeProduct.id}</span>
               <span className="flex items-center gap-1">
                 <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
-                <span className="text-xs text-green-600 font-bold uppercase tracking-wider">In Stock</span>
+                <span className="text-xs text-green-600 font-bold uppercase tracking-wider">In Stock & Bulk Ready</span>
               </span>
             </div>
 
-            {/* Pricing Frame */}
-            <div className="bg-[#F7F7F5] rounded-xl p-4 mb-6 border border-gray-100 flex items-center justify-between">
-              <div>
-                <p className="text-xs text-gray-400 font-bold uppercase tracking-wide">Price per {activeProduct.unit}</p>
-                <p className="text-2xl font-black text-[#071421] mt-0.5">
-                  {activeProduct.price != null ? `₹${activeProduct.price}` : 'Ask for Price'}
-                </p>
-              </div>
-              {activeProduct.price != null && (
-                <div className="text-right">
-                  <p className="text-xs text-gray-400 font-bold uppercase tracking-wide">Estimated Subtotal</p>
-                  <p className="text-xl font-black text-[#F59E0B] mt-0.5">₹{activeProduct.price * detailQty}</p>
-                </div>
-              )}
-            </div>
-
-            {/* Quantity Selector */}
-            {activeProduct.price != null && (
-              <div className="flex items-center justify-between gap-6 mb-6">
-                <span className="text-sm font-bold text-gray-700">Quantity</span>
-                <div className="flex items-center border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm shrink-0">
-                  <button 
-                    onClick={() => setDetailQty(q => Math.max(1, q - 1))}
-                    className="w-10 h-10 flex items-center justify-center hover:bg-gray-50 transition-colors"
-                  >
-                    <Minus size={14} className="text-gray-500" />
-                  </button>
-                  <span className="w-12 h-10 flex items-center justify-center font-bold text-sm text-gray-900 border-l border-r border-gray-100">
-                    {detailQty}
-                  </span>
-                  <button 
-                    onClick={() => setDetailQty(q => q + 1)}
-                    className="w-10 h-10 flex items-center justify-center hover:bg-gray-50 transition-colors"
-                  >
-                    <Plus size={14} className="text-gray-500" />
-                  </button>
+            {/* Packet Selector Chips */}
+            {activeProduct.packetSizes && activeProduct.packetSizes.length > 0 && (
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-3 mb-4">
+                <span className="text-[10px] font-black text-gray-700 uppercase tracking-wider block mb-1.5">
+                  Select Packet / Packing:
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  {activeProduct.packetSizes.map((pkt) => {
+                    const isSelected = (activeProduct.selectedPacket || activeProduct.packetSizes[0]) === pkt;
+                    return (
+                      <button
+                        key={pkt}
+                        onClick={() => {
+                          activeProduct.selectedPacket = pkt;
+                          setDetailQty(q => q); // trigger re-render
+                        }}
+                        className={`text-[11px] font-bold px-2.5 py-1.5 rounded-lg border transition-all cursor-pointer ${
+                          isSelected
+                            ? 'bg-[#071421] text-[#FF7A00] border-[#071421] shadow-sm'
+                            : 'bg-white text-gray-700 border-gray-200'
+                        }`}
+                      >
+                        {pkt}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
             )}
+
+            {/* Quantity Selector */}
+            <div className="flex items-center justify-between gap-6 mb-6 p-3 bg-gray-50 rounded-xl border border-gray-100">
+              <span className="text-xs font-black text-gray-700 uppercase tracking-wide">Required Quantity:</span>
+              <div className="flex items-center border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm shrink-0">
+                <button 
+                  onClick={() => setDetailQty(q => Math.max(1, q - 1))}
+                  className="w-9 h-9 flex items-center justify-center hover:bg-gray-100 transition-colors"
+                >
+                  <Minus size={13} className="text-gray-500" />
+                </button>
+                <span className="w-10 h-9 flex items-center justify-center font-bold text-xs text-gray-900 border-l border-r border-gray-100">
+                  {detailQty}
+                </span>
+                <button 
+                  onClick={() => setDetailQty(q => q + 1)}
+                  className="w-9 h-9 flex items-center justify-center hover:bg-gray-100 transition-colors"
+                >
+                  <Plus size={13} className="text-gray-500" />
+                </button>
+              </div>
+            </div>
 
             {/* CTAs */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
@@ -438,19 +464,19 @@ Thank you.`;
                   <div className="relative z-10 px-6 pt-24 pb-8 flex-1 flex flex-col justify-end text-left pointer-events-none">
                     <h1 className="text-white font-black leading-none mb-3">
                       <span className="block text-5xl tracking-tight leading-none">GABA</span>
-                      <span className="block text-xl text-[#F59E0B] tracking-wide mt-1.5 uppercase font-bold">TRADING COMPANY</span>
+                      <span className="block text-xl text-[#F59E0B] tracking-wide mt-1.5 uppercase font-bold">SANITARY SPECIALIST</span>
                     </h1>
                     
                     <p className="text-white font-bold text-lg leading-tight mb-1.5">
-                      "Everything You Need to Build Better."
+                      "Everything You Need for a Perfect Bathroom."
                     </p>
 
                     <p className="text-[#F59E0B] text-xs font-semibold mb-3 tracking-wide">
-                      From foundation to finishing, we have you covered.
+                      Premium Sanitary Products. Premium Deals.
                     </p>
                     
                     <p className="text-white/70 text-xs leading-relaxed max-w-sm mb-6">
-                      Quality products. Reliable supply. Delivered to your site.
+                      Premium sanitary products, modern designs, and reliable service for your bathroom.
                     </p>
 
                     {/* CTAs */}
@@ -462,7 +488,7 @@ Thank you.`;
                         }}
                         className="flex-1 bg-[#F59E0B] text-[#071421] font-bold text-xs py-2.5 rounded-lg active:scale-95 transition-all text-center cursor-pointer shadow-md"
                       >
-                        Shop Products
+                        Shop Sanitary Deals
                       </button>
                       <a
                         href={`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}`}
@@ -534,10 +560,10 @@ Thank you.`;
                   {/* Horizontal Categories Scroll */}
                   <div className="flex gap-3 overflow-x-auto pb-1 scrollbar-hide select-none -mx-4 px-4">
                     {[
-                      { id: 'Hardware', name: 'Hardware', img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=200&q=80' },
-                      { id: 'Plumbing', name: 'Sanitary', img: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=200&q=80' },
-                      { id: 'Cement', name: 'Building Materials', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&q=80' },
-                      { id: 'Paints & Finishing', name: 'Paint', img: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=200&q=80' }
+                      { id: 'Faucets & Taps', name: 'Faucets', img: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=200&q=80' },
+                      { id: 'Wash Basins', name: 'Basins', img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=200&q=80' },
+                      { id: 'Western Toilets', name: 'Toilets', img: 'https://images.unsplash.com/photo-1571786256017-aee7a0c009b8?w=200&q=80' },
+                      { id: 'Showers', name: 'Showers', img: 'https://images.unsplash.com/photo-1620626011761-996317702782?w=200&q=80' }
                     ].map(cat => (
                       <div
                         key={cat.id}
@@ -641,10 +667,10 @@ Thank you.`;
 
                 {/* WHATSAPP CTA */}
                 <div className="bg-[#FF7A00] text-white py-6 px-4 flex flex-col items-center justify-center text-center shadow-lg relative overflow-hidden">
-                  <p className="text-lg font-black leading-tight mb-1 relative z-10">Need Building Materials?</p>
-                  <p className="text-xs text-white/90 mb-4 max-w-xs relative z-10">Send your requirement on WhatsApp and get the best deal.</p>
+                  <p className="text-lg font-black leading-tight mb-1 relative z-10">Upgrade Your Bathroom Today!</p>
+                  <p className="text-xs text-white/90 mb-4 max-w-xs relative z-10">Premium sanitary products at special prices. Chat with us on WhatsApp.</p>
                   <a
-                    href={`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}`}
+                    href={`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${encodeURIComponent('Hello GABA Sanitary Specialist, I would like to enquire about sanitary products.')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#071421] text-white hover:bg-[#112538] font-bold text-xs py-2 px-5 rounded-lg flex items-center gap-2 shadow-md relative z-10"
@@ -662,11 +688,11 @@ Thank you.`;
                   <ul className="space-y-3.5 text-xs text-gray-600">
                     <li className="flex items-start gap-3">
                       <MapPin size={14} className="text-[#F59E0B] shrink-0 mt-0.5" />
-                      <span>Ludhiana, Punjab, India</span>
+                      <span>Main Road Kabir Nagar, Basti Jodhewal, Ludhiana – 141007</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <Phone size={14} className="text-[#F59E0B] shrink-0 mt-0.5" />
-                      <a href="tel:+918360774127" className="hover:text-gray-900">+91 83607 74127</a>
+                      <a href="tel:+919592959541" className="hover:text-gray-900">+91 9592 959541</a>
                     </li>
                     <li className="flex items-start gap-3">
                       <Clock size={14} className="text-[#F59E0B] shrink-0 mt-0.5" />
@@ -680,7 +706,7 @@ Thank you.`;
 
                 {/* FOOTER */}
                 <footer className="bg-[#071421] text-white/40 py-6 px-4 text-center border-t border-white/5">
-                  <p className="text-[10px]">© 2026 GABA Trading Company. All Rights Reserved.</p>
+                  <p className="text-[10px]">© 2026 GABA Sanitary Specialist. All Rights Reserved.</p>
                 </footer>
               </div>
             )}

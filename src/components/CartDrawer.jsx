@@ -122,51 +122,56 @@ export default function CartDrawer() {
 
                     {/* Info */}
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-sm text-[#111827] leading-tight truncate">
-                        {item.name}
-                      </p>
-                      <p className="text-[10px] text-[#6B7280] mb-0.5">{item.unit}</p>
-                      <p className="text-sm font-bold text-[#F59E0B]">
+                      <div className="flex items-center gap-1.5 mb-0.5">
+                        <p className="font-bold text-sm text-[#111827] leading-tight truncate">
+                          {item.name}
+                        </p>
+                      </div>
+                      {item.code && (
+                        <span className="inline-block bg-[#071421] text-[#FF7A00] text-[9px] font-mono font-bold px-1.5 py-0.2 rounded mb-1">
+                          {item.code}
+                        </span>
+                      )}
+                      {item.selectedPacket && (
+                        <p className="text-[11px] font-bold text-gray-600 mb-0.5">
+                          Packing: <span className="text-[#071421]">{item.selectedPacket}</span>
+                        </p>
+                      )}
+                      <p className="text-sm font-black text-[#FF7A00]">
                         {item.price != null
                           ? `₹${item.price.toLocaleString('en-IN')}`
-                          : 'Ask for Price'}
+                          : 'Wholesale Inquiry'}
                       </p>
 
-                      {/* Qty stepper + line subtotal */}
-                      <div className="flex items-center gap-2 mt-1.5">
-                        <div className="flex items-center border border-gray-200 rounded-lg overflow-hidden">
+                      {/* Qty stepper */}
+                      <div className="flex items-center gap-2 mt-2">
+                        <div className="flex items-center border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
                           <button
                             onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                            className="w-7 h-7 flex items-center justify-center text-gray-500 hover:bg-gray-100 transition-colors"
+                            className="w-7 h-7 flex items-center justify-center text-gray-500 hover:bg-gray-200 transition-colors"
                             aria-label="Decrease quantity"
                           >
                             <Minus size={11} />
                           </button>
-                          <span className="w-8 text-center text-sm font-semibold select-none">
+                          <span className="w-8 text-center text-xs font-bold select-none">
                             {item.quantity}
                           </span>
                           <button
                             onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                            className="w-7 h-7 flex items-center justify-center text-gray-500 hover:bg-gray-100 transition-colors"
+                            className="w-7 h-7 flex items-center justify-center text-gray-500 hover:bg-gray-200 transition-colors"
                             aria-label="Increase quantity"
                           >
                             <Plus size={11} />
                           </button>
                         </div>
-                        {item.price != null ? (
-                          <span className="text-sm font-bold text-[#111827]">
-                            ₹{(item.price * item.quantity).toLocaleString('en-IN')}
-                          </span>
-                        ) : (
-                          <span className="text-[11px] text-[#6B7280] italic">Ask for Price</span>
-                        )}
+                        <span className="text-[11px] font-bold text-gray-500">Qty / Packs</span>
                       </div>
                     </div>
 
                     {/* Remove */}
                     <button
                       onClick={() => removeItem(item.id)}
-                      className="text-gray-300 hover:text-red-500 transition-colors shrink-0 mt-0.5"
+                      className="text-gray-300 hover:text-red-500 transition-colors shrink-0 mt-0.5 cursor-pointer"
                       aria-label={`Remove ${item.name}`}
                     >
                       <X size={16} />
@@ -178,36 +183,36 @@ export default function CartDrawer() {
               {/* Customer details (optional) */}
               <div className="mt-4 p-3 bg-gray-50 rounded-xl border border-gray-200">
                 <p className="text-[11px] font-bold text-[#111827] mb-2 uppercase tracking-wider">
-                  Your Details (optional)
+                  Your Details (Optional)
                 </p>
                 <div className="space-y-2">
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Your Name / Business Name"
                     value={customerInfo.name}
                     onChange={(e) => setCustomerInfo({ ...customerInfo, name: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#F59E0B] bg-white"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#FF7A00] bg-white"
                   />
                   <input
                     type="tel"
                     placeholder="Phone Number"
                     value={customerInfo.phone}
                     onChange={(e) => setCustomerInfo({ ...customerInfo, phone: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#F59E0B] bg-white"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#FF7A00] bg-white"
                   />
                   <input
                     type="text"
-                    placeholder="Delivery Address"
+                    placeholder="City / Delivery Location"
                     value={customerInfo.address}
                     onChange={(e) => setCustomerInfo({ ...customerInfo, address: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#F59E0B] bg-white"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#FF7A00] bg-white"
                   />
                   <textarea
-                    placeholder="Additional notes (e.g. preferred brand, delivery time)..."
+                    placeholder="Additional notes (e.g. required delivery date, carton requirements)..."
                     value={customerInfo.notes}
                     onChange={(e) => setCustomerInfo({ ...customerInfo, notes: e.target.value })}
                     rows={2}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#F59E0B] bg-white resize-none"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#FF7A00] bg-white resize-none"
                   />
                 </div>
               </div>
@@ -219,43 +224,32 @@ export default function CartDrawer() {
         {!cartIsEmpty && (
           <div className="px-5 py-4 border-t border-gray-100 bg-white shrink-0">
             {/* Summary */}
-            <div className="flex justify-between items-center mb-1">
-              <span className="text-sm text-[#6B7280]">Total Items</span>
-              <span className="font-semibold text-[#111827]">{totalItems}</span>
+            <div className="flex justify-between items-center mb-3">
+              <span className="text-sm font-bold text-gray-600">Total Distinct Products</span>
+              <span className="font-black text-[#071421] text-base">{totalItems} items selected</span>
             </div>
-            <div className="flex justify-between items-center mb-1">
-              <span className="font-bold text-[#111827]">Estimated Total</span>
-              <span className="text-xl font-black text-[#111827]">
-                ₹{estimatedTotal.toLocaleString('en-IN')}
-              </span>
-            </div>
-            {hasAskForPrice && (
-              <p className="text-[10px] text-[#6B7280] mb-3 leading-relaxed">
-                * Some items are Ask for Price and are not included in the total above.
-              </p>
-            )}
 
             {/* Primary CTA — WhatsApp */}
             <button
               id="cart-whatsapp-btn"
               onClick={handleWhatsApp}
-              className="w-full bg-[#F59E0B] text-[#071421] font-bold py-3.5 rounded-xl hover:bg-[#FFB21A] active:scale-95 transition-all duration-150 flex items-center justify-center gap-2 mb-2 text-sm shadow-lg shadow-[#F59E0B]/30"
+              className="w-full bg-[#FF7A00] text-[#071421] font-bold py-3.5 rounded-xl hover:bg-[#ff881a] active:scale-95 transition-all duration-150 flex items-center justify-center gap-2 mb-2 text-sm shadow-lg shadow-[#FF7A00]/30 cursor-pointer"
             >
               <MessageCircle size={18} />
-              Order on WhatsApp
+              Send Inquiry on WhatsApp
             </button>
 
             {/* Secondary CTA */}
             <button
               onClick={() => setIsCartOpen(false)}
-              className="w-full bg-white text-[#111827] font-semibold py-2.5 rounded-xl border border-gray-300 hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 text-sm"
+              className="w-full bg-white text-[#111827] font-semibold py-2.5 rounded-xl border border-gray-300 hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 text-sm cursor-pointer"
             >
               <ShoppingCart size={15} />
-              Continue Shopping
+              Add More Products
             </button>
 
             <p className="text-center text-[10px] text-[#6B7280] mt-2 leading-relaxed">
-              Final pricing may vary. We will confirm availability &amp; final price on WhatsApp.
+              We will confirm stock availability and share our best wholesale quotation directly on WhatsApp.
             </p>
           </div>
         )}

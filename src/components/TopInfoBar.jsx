@@ -28,12 +28,12 @@ export default function TopInfoBar() {
         {/* Right: Contact info */}
         <div className="flex items-center gap-4">
           <a
-            href="tel:+918360774127"
+            href="tel:+919592959541"
             className="flex items-center gap-1 hover:underline font-semibold whitespace-nowrap"
           >
             <Phone size={12} />
             <span className="hidden sm:inline">Need Help? Call Us: </span>
-            +91 83607 74127
+            +91 9592 959541
           </a>
           <a
             href={`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}`}

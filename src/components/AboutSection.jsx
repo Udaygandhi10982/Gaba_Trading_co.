@@ -2,69 +2,42 @@ import { useState, useRef } from 'react';
 import { Shield, Truck, Tag, Users, Play, X, Volume2, VolumeX, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const highlights = [
-  { icon: Shield, label: 'Quality Materials' },
-  { icon: Truck, label: 'Reliable Supply' },
-  { icon: Tag, label: 'Better Prices' },
+  { icon: Shield, label: 'Quality Products' },
+  { icon: Truck, label: 'Best Price' },
+  { icon: Tag, label: 'Wide Range' },
   { icon: Users, label: 'Customer Service' },
 ];
 
 const videosList = [
-  // Page 1 (Items 1-3)
   {
     id: 1,
     src: '/videos/gaba-video-1.mp4',
-    title: 'Hardware & Fittings',
-    desc: 'Premium quality showcase',
+    title: 'Faucets & Taps',
+    desc: 'Stylish & durable taps',
   },
   {
     id: 2,
     src: '/videos/gaba-video-2.mp4',
-    title: 'Pipes & Accessories',
-    desc: 'Top plumbing solutions',
+    title: 'Bathroom Collections',
+    desc: 'Modern sanitary designs',
   },
   {
     id: 3,
     src: '/videos/gaba-video-3.mp4',
-    title: 'Warehouse & Logistics',
-    desc: 'On-time delivery setup',
+    title: 'Visit Our Showroom',
+    desc: 'See quality before you buy',
   },
-  // Page 2 (Items 4-6)
   {
     id: 4,
-    src: '/videos/gaba-video-1.mp4',
-    title: 'Cement & Concrete',
-    desc: 'Heavy structural materials',
+    src: '/videos/gaba-video-4.mp4',
+    title: 'Premium Quality',
+    desc: 'Unmatched durability',
   },
   {
     id: 5,
-    src: '/videos/gaba-video-2.mp4',
-    title: 'TMT Steel & Rebars',
-    desc: 'Tested reinforcement steel',
-  },
-  {
-    id: 6,
-    src: '/videos/gaba-video-3.mp4',
-    title: 'Plumbing Joints',
-    desc: 'Leakproof fittings check',
-  },
-  // Page 3 (Items 7-9)
-  {
-    id: 7,
-    src: '/videos/gaba-video-1.mp4',
-    title: 'Electrical Cables',
-    desc: 'Safe wiring solutions',
-  },
-  {
-    id: 8,
-    src: '/videos/gaba-video-2.mp4',
-    title: 'Bricks & Blockwork',
-    desc: 'Durable red clay bricks',
-  },
-  {
-    id: 9,
-    src: '/videos/gaba-video-3.mp4',
-    title: 'Painting & Finishes',
-    desc: 'Paints & primers display',
+    src: '/videos/gaba-video-5.mp4',
+    title: 'Wide Range',
+    desc: 'Explore our latest catalog',
   },
 ];
 
@@ -74,7 +47,7 @@ export default function AboutSection() {
   const [muted, setMuted] = useState(false);
   const videoRef = useRef(null);
 
-  const totalPages = 3;
+  const totalPages = Math.ceil(videosList.length / 3);
 
   const handlePrevPage = () => {
     setCurrentPage((prev) => (prev > 0 ? prev - 1 : totalPages - 1));
@@ -113,12 +86,12 @@ export default function AboutSection() {
             WHO WE ARE
           </p>
           <h2 className="text-3xl sm:text-4xl font-black text-[#111827] leading-tight mb-4">
-            Trading Company
+            Sanitary Solutions
             <br />
             <span className="text-[#F59E0B]">You Can Rely On</span>
           </h2>
           <p className="text-[#6B7280] text-sm leading-relaxed mb-8 max-w-lg">
-            GABA Trading Company is your reliable partner for high-grade construction materials. We are committed to supplying the finest selection, competitive pricing, and client-centric service for all your structural needs.
+            GABA Sanitary Specialist is your trusted destination for quality bathroom fittings and sanitary products. We bring together modern designs, reliable products, and attractive prices for every bathroom.
           </p>
 
           {/* 4 Icon Highlights */}
@@ -138,7 +111,7 @@ export default function AboutSection() {
               onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-[#071421] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#112538] transition-all duration-200 text-xs shadow-md"
             >
-              Explore Our Materials &rarr;
+              Explore Our Collection &rarr;
             </button>
           </div>
         </div>

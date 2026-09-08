@@ -18,17 +18,20 @@ export function CartProvider({ children }) {
     localStorage.setItem('gaba-cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
-  const addItem = (product, quantity = 1) => {
+  const addItem = (product, quantity = 1, selectedPacket = null) => {
+    const packet = selectedPacket || (product.packetSizes && product.packetSizes.length > 0 ? product.packetSizes[0] : null);
+    const itemKey = `${product.id}-${packet || 'default'}`;
+
     setCartItems(prev => {
-      const existing = prev.find(item => item.id === product.id);
+      const existing = prev.find(item => item.itemKey === itemKey || (item.id === product.id && item.selectedPacket === packet));
       if (existing) {
         return prev.map(item =>
-          item.id === product.id
+          (item.itemKey === itemKey || (item.id === product.id && item.selectedPacket === packet))
             ? { ...item, quantity: item.quantity + quantity }
             : item
         );
       }
-      return [...prev, { ...product, quantity }];
+      return [...prev, { ...product, itemKey, selectedPacket: packet, quantity }];
     });
   };
 
