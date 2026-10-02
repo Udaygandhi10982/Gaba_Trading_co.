@@ -132,11 +132,14 @@ export default function CartDrawer() {
                           {item.code}
                         </span>
                       )}
-                      {item.selectedPacket && (
-                        <p className="text-[11px] font-bold text-gray-600 mb-0.5">
-                          Packing: <span className="text-[#071421]">{item.selectedPacket}</span>
-                        </p>
-                      )}
+                      <div className="flex flex-wrap items-center gap-x-2 text-[11px] font-bold text-gray-600 mb-0.5">
+                        {item.selectedSize && (
+                          <span>Size: <strong className="text-[#071421]">{item.selectedSize}</strong></span>
+                        )}
+                        {item.selectedPacket && (
+                          <span>Packing: <strong className="text-[#071421]">{item.selectedPacket}</strong></span>
+                        )}
+                      </div>
                       <p className="text-sm font-black text-[#FF7A00]">
                         {item.price != null
                           ? `₹${item.price.toLocaleString('en-IN')}`

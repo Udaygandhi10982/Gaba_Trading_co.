@@ -10,12 +10,14 @@ export function generateWhatsAppMessage(cartItems, customerInfo = {}) {
   const itemLines = cartItems.map((item, i) => {
     const num = i + 1;
     const codeTag = item.code ? ` (Code: ${item.code})` : '';
+    const sizeTag = item.selectedSize ? `\n   Size: ${item.selectedSize}` : '';
     const packetTag = item.selectedPacket ? `\n   Packing/Packet: ${item.selectedPacket}` : '';
 
     if (item.price != null) {
       const subtotal = item.price * item.quantity;
       return (
         `${num}. ${item.name}${codeTag}` +
+        `${sizeTag}` +
         `${packetTag}` +
         `\n   Quantity: ${item.quantity} ${item.unit || 'Piece'}` +
         `\n   Price: ₹${item.price} / ${item.unit || 'Piece'}` +
@@ -24,6 +26,7 @@ export function generateWhatsAppMessage(cartItems, customerInfo = {}) {
     } else {
       return (
         `${num}. ${item.name}${codeTag}` +
+        `${sizeTag}` +
         `${packetTag}` +
         `\n   Quantity: ${item.quantity} ${item.unit || 'Piece'}` +
         `\n   Price: Wholesale Inquiry`

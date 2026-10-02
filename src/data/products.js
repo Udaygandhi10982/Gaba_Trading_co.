@@ -15,9 +15,9 @@ export const products = [
   {
     "id": "gtc001",
     "code": "GTC001",
-    "name": "Brass Nozzel Cock (Heavy Body)",
+    "name": "CI Nozzel Cock – Jumper Valve",
     "category": "Faucets & Taps",
-    "description": "Engineered from premium heavy-weight solid forged brass weighing approx 190 grams. Features a serrated nozzle barb for secure hose pipe locking and heavy-duty quarter-turn flow control. Built for high water pressure resistance with zero leakage.",
+    "description": "Size: 1/2 inch (15 mm); Inner parts: Brass. CI jumper-valve type cock with precision internal brass valve mechanism.",
     "unit": "Piece",
     "badge": "BESTSELLER",
     "deal": true,
@@ -39,39 +39,27 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Material",
-        "value": "100% Solid Forged Brass"
+        "label": "Body Material",
+        "value": "Cast Iron (CI)"
+      },
+      {
+        "label": "Internal Valve",
+        "value": "Brass Jumper Valve"
       },
       {
         "label": "Size",
-        "value": "1/2 Inch (15mm Standard)"
-      },
-      {
-        "label": "Weight",
-        "value": "Approx. 190 grams Heavy Body"
-      },
-      {
-        "label": "Nozzle Type",
-        "value": "Serrated Hose Connection Barb"
-      },
-      {
-        "label": "Finish",
-        "value": "Mirror Polished Natural Brass"
-      },
-      {
-        "label": "Application",
-        "value": "Washing, Garden, Utility & Domestic"
+        "value": "1/2 Inch (15mm)"
       }
     ]
   },
   {
     "id": "gtc002",
     "code": "GTC002",
-    "name": "CI Nozzel Cock (Heavy Patti Handle)",
+    "name": "CI Nozzel Cock – Round Handle",
     "category": "Faucets & Taps",
-    "description": "Industrial grade Cast Iron nozzle cock built with an internal solid brass disc mechanism and a reinforced heavy metal patti handle. Designed for rugged outdoor, commercial, and high-frequency residential usage.",
+    "description": "Size: 1/2 inch (15 mm); Inner parts: Brass. CI cock with ergonomic round handle design.",
     "unit": "Piece",
-    "badge": "HEAVY DUTY",
+    "badge": "CLASSIC",
     "deal": false,
     "dealLabel": "",
     "sizes": [
@@ -92,36 +80,28 @@ export const products = [
     "specifications": [
       {
         "label": "Body Material",
-        "value": "High Strength Cast Iron (CI)"
-      },
-      {
-        "label": "Inner Disc",
-        "value": "Machined Brass Disc"
+        "value": "Cast Iron (CI)"
       },
       {
         "label": "Handle",
-        "value": "Heavy Metal Patti Lever"
+        "value": "Round Handle Knob"
       },
       {
         "label": "Size",
         "value": "1/2 Inch (15mm)"
-      },
-      {
-        "label": "Corrosion Protection",
-        "value": "Anti-Rust Protective Coating"
       }
     ]
   },
   {
     "id": "gtc003",
     "code": "GTC003",
-    "name": "CI Nozzel Cock (Jumper Valve Mechanism)",
+    "name": "CP Nozzel Cock",
     "category": "Faucets & Taps",
-    "description": "Features a reliable internal brass jumper valve system that guarantees drip-free shutoff even in hard water conditions. Rugged cast iron housing with standard 1/2-inch inlet thread.",
+    "description": "Size: 1/2 inch (15 mm); Material: Heavy. Chrome-plated cock built with heavy-duty body.",
     "unit": "Piece",
-    "badge": "SMOOTH FLOW",
-    "deal": false,
-    "dealLabel": "",
+    "badge": "PREMIUM CP",
+    "deal": true,
+    "dealLabel": "HOT DEAL",
     "sizes": [
       "1/2 Inch (15mm)"
     ],
@@ -139,35 +119,27 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Body Material",
-        "value": "Durable Cast Iron (CI)"
+        "label": "Finish",
+        "value": "Chrome Plated"
       },
       {
-        "label": "Internal Valve",
-        "value": "High Precision Brass Jumper Valve"
-      },
-      {
-        "label": "Inner Parts",
-        "value": "100% Solid Brass Core"
+        "label": "Material",
+        "value": "Heavy Body"
       },
       {
         "label": "Size",
         "value": "1/2 Inch (15mm)"
-      },
-      {
-        "label": "Thread",
-        "value": "Standard BSP Precision Thread"
       }
     ]
   },
   {
     "id": "gtc004",
     "code": "GTC004",
-    "name": "CI Nozzel Cock (Round Knob Handle)",
+    "name": "CI CP Long Body",
     "category": "Faucets & Taps",
-    "description": "Classic round-knob design for smooth, effortless water regulation. Cast iron construction paired with corrosion-resistant brass internals for dependable long-term water flow control.",
+    "description": "Size: 1/2 inch (15 mm); Inner disc: Brass. Chrome-plated long body tap with brass inner disc.",
     "unit": "Piece",
-    "badge": "CLASSIC",
+    "badge": "EXTENDED REACH",
     "deal": false,
     "dealLabel": "",
     "sizes": [
@@ -187,16 +159,12 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Body Material",
-        "value": "Cast Iron (CI)"
+        "label": "Finish",
+        "value": "Chrome Plated Long Body"
       },
       {
-        "label": "Inner Parts",
-        "value": "Machined Brass Spindle & Seat"
-      },
-      {
-        "label": "Handle",
-        "value": "Ergonomic Round Chrome-plated Knob"
+        "label": "Inner Disc",
+        "value": "Brass Disc"
       },
       {
         "label": "Size",
@@ -207,13 +175,13 @@ export const products = [
   {
     "id": "gtc005",
     "code": "GTC005",
-    "name": "Chrome Plated (CP) Heavy Nozzel Cock",
+    "name": "CI CP Piller Cock",
     "category": "Faucets & Taps",
-    "description": "Stunning chrome mirror finish with superior corrosion resistance. Features a multi-step nickel-chromium coating that resists water stains and tarnishing. Ideal for modern utility areas and bathrooms.",
+    "description": "Size: 1/2 inch (15 mm); Inner disc: Brass. Chrome-plated pillar/basin cock.",
     "unit": "Piece",
-    "badge": "PREMIUM CP",
+    "badge": "BASIN SPECIAL",
     "deal": true,
-    "dealLabel": "HOT DEAL",
+    "dealLabel": "POPULAR",
     "sizes": [
       "1/2 Inch (15mm)"
     ],
@@ -231,35 +199,31 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Finish",
-        "value": "Multi-layer Mirror Chrome Plating"
+        "label": "Type",
+        "value": "Pillar Cock"
       },
       {
-        "label": "Material",
-        "value": "Heavy Duty Alloy / Brass Core"
+        "label": "Inner Disc",
+        "value": "Brass Disc"
       },
       {
         "label": "Size",
         "value": "1/2 Inch (15mm)"
-      },
-      {
-        "label": "Features",
-        "value": "Serrated Hose Connector & Sleek Lever"
       }
     ]
   },
   {
     "id": "gtc006",
     "code": "GTC006",
-    "name": "CI CP Long Body Bib Tap",
-    "category": "Faucets & Taps",
-    "description": "Extended long-body spout provides comfortable wall clearance for filling buckets and deep washing basins. Equipped with a brass inner disc for silky-smooth quarter-turn operation.",
+    "name": "Premium PVC Bib Cock – Short Body",
+    "category": "PVC Taps",
+    "description": "Size: 15 mm; Body type: Short body. White PVC body with blue knob.",
     "unit": "Piece",
-    "badge": "EXTENDED REACH",
+    "badge": "ECONOMICAL",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "1/2 Inch (15mm)"
+      "15mm (1/2\")"
     ],
     "packetSizes": [
       "1 Pc",
@@ -275,35 +239,31 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Design",
-        "value": "Long Body Spout with Wall Flange"
+        "label": "Material",
+        "value": "Virgin Engineering Grade PVC"
       },
       {
-        "label": "Inner Disc",
-        "value": "Brass Ceramic Cartridge"
+        "label": "Body Style",
+        "value": "Short body with blue knob"
       },
       {
         "label": "Size",
-        "value": "1/2 Inch (15mm)"
-      },
-      {
-        "label": "Finish",
-        "value": "Chrome Plated Mirror Finish"
+        "value": "15 mm (1/2 Inch)"
       }
     ]
   },
   {
     "id": "gtc007",
     "code": "GTC007",
-    "name": "CI CP Pillar Cock (Basin Mounted)",
-    "category": "Faucets & Taps",
-    "description": "Contemporary pillar cock for countertop and ceramic wash basins. Features an elegant curved neck and top-mounted feather-touch lever with hot/cold index markers.",
+    "name": "Premium PVC Bib Cock – Long Body",
+    "category": "PVC Taps",
+    "description": "Size: 15 mm; Body type: Long body. White PVC long-body cock.",
     "unit": "Piece",
-    "badge": "BASIN SPECIAL",
-    "deal": true,
-    "dealLabel": "POPULAR",
+    "badge": "EXTENDED REACH",
+    "deal": false,
+    "dealLabel": "",
     "sizes": [
-      "1/2 Inch (15mm)"
+      "15mm (1/2\")"
     ],
     "packetSizes": [
       "1 Pc",
@@ -319,39 +279,36 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Mounting",
-        "value": "Deck / Basin Mounted Pillar Base"
+        "label": "Material",
+        "value": "High-Density Virgin PVC"
       },
       {
-        "label": "Spout",
-        "value": "High Arch Elegant Spout"
-      },
-      {
-        "label": "Inner Disc",
-        "value": "Heavy Brass Disc Mechanism"
+        "label": "Body Style",
+        "value": "Long body cock"
       },
       {
         "label": "Size",
-        "value": "1/2 Inch (15mm)"
+        "value": "15 mm (1/2 Inch)"
       }
     ]
   },
   {
     "id": "gtc008",
     "code": "GTC008",
-    "name": "Premium PVC Bib Cock (Short Body)",
+    "name": "Premium PVC Nozzel Cock – Short Body",
     "category": "PVC Taps",
-    "description": "Molded from 100% virgin engineering PVC. Chemical resistant, scale-free, and guaranteed rust-proof. Complete with matching decorative wall flange plate.",
+    "description": "Size: 15 mm; Body type: Short body. White PVC nozzle cock.",
     "unit": "Piece",
-    "badge": "ECONOMICAL",
+    "badge": "HOSE READY",
     "deal": false,
     "dealLabel": "",
     "sizes": [
       "15mm (1/2\")"
     ],
     "packetSizes": [
+      "1 Pc",
       "10 Pcs Pkt",
-      "50 Pcs Pkt"
+      "50 Pcs Box"
     ],
     "image": "/images/products/gtc008.jpg",
     "images": [
@@ -363,42 +320,35 @@ export const products = [
     "specifications": [
       {
         "label": "Material",
-        "value": "Virgin Engineering Grade PVC"
+        "value": "Virgin PVC Polymer"
       },
       {
-        "label": "Body Style",
-        "value": "Compact Short Body"
+        "label": "Type",
+        "value": "Nozzle Cock Short Body"
       },
       {
         "label": "Size",
-        "value": "15mm (1/2 Inch)"
-      },
-      {
-        "label": "Handle",
-        "value": "Ergonomic Royal Blue Turn Knob"
-      },
-      {
-        "label": "Includes",
-        "value": "Wall Flange Plate Included"
+        "value": "15 mm (1/2 Inch)"
       }
     ]
   },
   {
     "id": "gtc009",
     "code": "GTC009",
-    "name": "Premium PVC Bib Cock (Long Body)",
-    "category": "PVC Taps",
-    "description": "Long-neck PVC tap designed for utility spaces, kitchen sinks, and washrooms. High tensile polymer threads prevent cross-threading during installation.",
+    "name": "A2 Lite Disc",
+    "category": "Valves & Spindles",
+    "description": "Size: 1/2 inch; Weight: 40 g. Brass-colored valve/disc.",
     "unit": "Piece",
-    "badge": "DURABLE",
+    "badge": "SPARE PART",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "15mm (1/2\")"
+      "1/2 Inch (40g)"
     ],
     "packetSizes": [
-      "10 Pcs Pkt",
-      "50 Pcs Pkt"
+      "1 Pc",
+      "20 Pcs Pkt",
+      "50 Pcs Box"
     ],
     "image": "/images/products/gtc009.jpg",
     "images": [
@@ -409,39 +359,32 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Material",
-        "value": "High-Density Virgin PVC"
-      },
-      {
-        "label": "Body Style",
-        "value": "Extended Long Body"
+        "label": "Weight",
+        "value": "40 grams"
       },
       {
         "label": "Size",
-        "value": "15mm (1/2 Inch)"
-      },
-      {
-        "label": "Features",
-        "value": "Smooth Flow Aerated Discharge"
+        "value": "1/2 Inch"
       }
     ]
   },
   {
     "id": "gtc010",
     "code": "GTC010",
-    "name": "Premium PVC Nozzel Cock (Hose Adapter)",
-    "category": "PVC Taps",
-    "description": "Specialized PVC tap featuring a multi-groove hose nozzle tip for secure rubber pipe attachment. Zero rust, excellent UV resistance, and durable quarter-turn valve.",
+    "name": "A2 Heavy Disc",
+    "category": "Valves & Spindles",
+    "description": "Size: 1/2 inch; Weight: 46 g. Heavier brass-colored disc.",
     "unit": "Piece",
-    "badge": "HOSE READY",
-    "deal": false,
-    "dealLabel": "",
+    "badge": "HEAVY BRASS",
+    "deal": true,
+    "dealLabel": "EXTRA HEAVY",
     "sizes": [
-      "15mm (1/2\")"
+      "1/2 Inch (46g)"
     ],
     "packetSizes": [
-      "10 Pcs Pkt",
-      "50 Pcs Pkt"
+      "1 Pc",
+      "20 Pcs Pkt",
+      "50 Pcs Box"
     ],
     "image": "/images/products/gtc010.jpg",
     "images": [
@@ -452,111 +395,21 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Material",
-        "value": "Virgin PVC Polymer"
-      },
-      {
-        "label": "Spout",
-        "value": "Tapered Multi-Ring Hose Nozzle"
+        "label": "Weight",
+        "value": "46 grams Heavy Disc"
       },
       {
         "label": "Size",
-        "value": "15mm (1/2 Inch)"
+        "value": "1/2 Inch"
       }
     ]
   },
   {
     "id": "gtc011",
     "code": "GTC011",
-    "name": "A2 Lite Brass Disc Spindle (40g)",
-    "category": "Valves & Spindles",
-    "description": "Precision-machined 40-gram brass replacement spindle cartridge. Features durable ceramic disc plates for high-cycle smooth rotation and total drip prevention.",
-    "unit": "Piece",
-    "badge": "SPARE PART",
-    "deal": false,
-    "dealLabel": "",
-    "sizes": [
-      "1/2 Inch Standard"
-    ],
-    "packetSizes": [
-      "20 Pcs Pkt",
-      "50 Pcs Pkt"
-    ],
-    "image": "/images/products/gtc011.jpg",
-    "images": [
-      "/images/products/gtc011.jpg",
-      "/images/products/gtc011_exploded.jpg",
-      "/images/products/gtc011_angles.jpg",
-      "/images/products/gtc011_usage.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Weight",
-        "value": "40 grams Solid Brass"
-      },
-      {
-        "label": "Size",
-        "value": "1/2 Inch (15mm)"
-      },
-      {
-        "label": "Mechanism",
-        "value": "High Grade Ceramic Disc"
-      },
-      {
-        "label": "Compatibility",
-        "value": "Universal Fit for 1/2\" Taps"
-      }
-    ]
-  },
-  {
-    "id": "gtc012",
-    "code": "GTC012",
-    "name": "A2 Heavy Brass Disc Spindle (46g)",
-    "category": "Valves & Spindles",
-    "description": "Heavy-duty 46g solid brass valve core cartridge. Built with high-density brass alloy and precision ground ceramic discs for heavy commercial and residential plumbing applications.",
-    "unit": "Piece",
-    "badge": "HEAVY BRASS",
-    "deal": true,
-    "dealLabel": "EXTRA HEAVY",
-    "sizes": [
-      "1/2 Inch Standard"
-    ],
-    "packetSizes": [
-      "20 Pcs Pkt",
-      "50 Pcs Pkt"
-    ],
-    "image": "/images/products/gtc012.jpg",
-    "images": [
-      "/images/products/gtc012.jpg",
-      "/images/products/gtc012_exploded.jpg",
-      "/images/products/gtc012_angles.jpg",
-      "/images/products/gtc012_usage.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Weight",
-        "value": "46 grams Extra Heavy Brass"
-      },
-      {
-        "label": "Size",
-        "value": "1/2 Inch (15mm)"
-      },
-      {
-        "label": "Durability",
-        "value": "Tested up to 500,000 Turns"
-      },
-      {
-        "label": "Seals",
-        "value": "High Temperature Silicone O-Rings"
-      }
-    ]
-  },
-  {
-    "id": "gtc013",
-    "code": "GTC013",
-    "name": "Stainless Steel Braided Connection Pipe",
+    "name": "S.S Connection Pipe",
     "category": "Pipes & Hoses",
-    "description": "Burst-proof flexible connector pipe featuring high-density Grade 304 stainless steel cross-braiding. Comes with leak-proof chrome nuts and heavy yellow silicone washers for geysers, basins, and cisterns.",
+    "description": "Sizes: 18, 24, 30 and 36 inch. Stainless-steel flexible pipe.",
     "unit": "Piece",
     "badge": "HIGH PRESSURE",
     "deal": true,
@@ -568,8 +421,80 @@ export const products = [
       "36 Inch"
     ],
     "packetSizes": [
+      "1 Pc",
       "10 Pcs Pkt",
+      "50 Pcs Box"
+    ],
+    "image": "/images/products/gtc011.jpg",
+    "images": [
+      "/images/products/gtc011.jpg",
+      "/images/products/gtc011_exploded.jpg",
+      "/images/products/gtc011_angles.jpg",
+      "/images/products/gtc011_usage.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Stainless Steel Flexible Pipe"
+      },
+      {
+        "label": "Available Sizes",
+        "value": "18, 24, 30, 36 inch"
+      }
+    ]
+  },
+  {
+    "id": "gtc012",
+    "code": "GTC012",
+    "name": "Hex Nipple",
+    "category": "Brass Threaded Fittings",
+    "description": "Size: 1/2 inch; Material: Stainless Steel 304. SS threaded hex nipple.",
+    "unit": "Piece",
+    "badge": "SS 304",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "1/2 Inch"
+    ],
+    "packetSizes": [
+      "1 Pc",
       "25 Pcs Pkt",
+      "100 Pcs Box"
+    ],
+    "image": "/images/products/gtc012.jpg",
+    "images": [
+      "/images/products/gtc012.jpg",
+      "/images/products/gtc012_exploded.jpg",
+      "/images/products/gtc012_angles.jpg",
+      "/images/products/gtc012_usage.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Stainless Steel 304"
+      },
+      {
+        "label": "Size",
+        "value": "1/2 Inch"
+      }
+    ]
+  },
+  {
+    "id": "gtc013",
+    "code": "GTC013",
+    "name": "Zet Sprey – Regular",
+    "category": "Health & Jet Sprays",
+    "description": "Fitting: Regular; Material: Stainless steel. SS spray/flexible fitting.",
+    "unit": "Set",
+    "badge": "COMFORT SPRAY",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "Regular Fit"
+    ],
+    "packetSizes": [
+      "1 Pc",
+      "10 Pcs Pkt",
       "50 Pcs Box"
     ],
     "image": "/images/products/gtc013.jpg",
@@ -581,44 +506,32 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Outer Material",
-        "value": "High-Tensile Grade 304 SS Braid"
+        "label": "Material",
+        "value": "Stainless Steel"
       },
       {
-        "label": "Inner Tube",
-        "value": "Non-Toxic EPDM / PVC Core"
-      },
-      {
-        "label": "Nuts",
-        "value": "Chrome-Plated Forged Brass Nuts"
-      },
-      {
-        "label": "Washers",
-        "value": "Heavy Duty Yellow Sealing Washers"
-      },
-      {
-        "label": "Available Lengths",
-        "value": "18\", 24\", 30\", 36\""
+        "label": "Fitting",
+        "value": "Regular Bracket"
       }
     ]
   },
   {
     "id": "gtc014",
     "code": "GTC014",
-    "name": "Hex Nipple (Grade 304 Stainless Steel)",
-    "category": "Pipes & Hoses",
-    "description": "CNC machined Grade 304 Stainless Steel hex connector nipple. Provides superior corrosion resistance and high pressure tolerance for connecting plumbing fittings.",
-    "unit": "Piece",
-    "badge": "SS 304",
-    "deal": false,
-    "dealLabel": "",
+    "name": "Zet Sprey – One Piece",
+    "category": "Health & Jet Sprays",
+    "description": "Fitting: One piece; Material: Stainless steel. One-piece SS spray assembly.",
+    "unit": "Set",
+    "badge": "PREMIUM SS",
+    "deal": true,
+    "dealLabel": "TOP RATED",
     "sizes": [
-      "1/2 Inch (15mm)"
+      "One Piece Fit"
     ],
     "packetSizes": [
-      "25 Pcs Pkt",
-      "50 Pcs Pkt",
-      "100 Pcs Box"
+      "1 Pc",
+      "10 Pcs Pkt",
+      "50 Pcs Box"
     ],
     "image": "/images/products/gtc014.jpg",
     "images": [
@@ -630,114 +543,20 @@ export const products = [
     "specifications": [
       {
         "label": "Material",
-        "value": "100% Grade 304 Stainless Steel"
+        "value": "Stainless Steel"
       },
       {
-        "label": "Size",
-        "value": "1/2 Inch Male to Male"
-      },
-      {
-        "label": "Threading",
-        "value": "CNC Precision Cut BSP Threads"
-      },
-      {
-        "label": "Hex Nut",
-        "value": "Solid Hexagonal Wrench Grip"
+        "label": "Fitting",
+        "value": "One-Piece Assembly"
       }
     ]
   },
   {
     "id": "gtc015",
     "code": "GTC015",
-    "name": "Toilet Jet Spray (Regular Bracket Fitting)",
-    "category": "Health & Jet Sprays",
-    "description": "Adjustable toilet jet spray assembly with stainless steel wand and flexible braided hose. Mounts easily under standard commode seats for hygienic water spray.",
-    "unit": "Set",
-    "badge": "COMFORT SPRAY",
-    "deal": false,
-    "dealLabel": "",
-    "sizes": [
-      "Standard Toilet Fit"
-    ],
-    "packetSizes": [
-      "1 Pc",
-      "10 Pcs Pkt"
-    ],
-    "image": "/images/products/gtc015.jpg",
-    "images": [
-      "/images/products/gtc015.jpg",
-      "/images/products/gtc015_exploded.jpg",
-      "/images/products/gtc015_angles.jpg",
-      "/images/products/gtc015_usage.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Tube",
-        "value": "Flexible Stainless Steel Hose"
-      },
-      {
-        "label": "Nozzle",
-        "value": "Solid Stainless Steel Jet Wand"
-      },
-      {
-        "label": "Bracket",
-        "value": "Universal Toilet Seat Clamp Bracket"
-      },
-      {
-        "label": "Operation",
-        "value": "Continuous Angle Spray"
-      }
-    ]
-  },
-  {
-    "id": "gtc016",
-    "code": "GTC016",
-    "name": "Toilet Jet Spray (One-Piece Heavy Fitting)",
-    "category": "Health & Jet Sprays",
-    "description": "Heavy gauge one-piece stainless steel toilet jet spray with integrated bracket. Eliminates loose joints for lifetime wobble-free hygiene spray performance.",
-    "unit": "Set",
-    "badge": "PREMIUM SS",
-    "deal": true,
-    "dealLabel": "TOP RATED",
-    "sizes": [
-      "One Piece Universal"
-    ],
-    "packetSizes": [
-      "1 Pc",
-      "10 Pcs Pkt"
-    ],
-    "image": "/images/products/gtc016.jpg",
-    "images": [
-      "/images/products/gtc016.jpg",
-      "/images/products/gtc016_exploded.jpg",
-      "/images/products/gtc016_angles.jpg",
-      "/images/products/gtc016_usage.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Structure",
-        "value": "Seamless One-Piece Stainless Steel Frame"
-      },
-      {
-        "label": "Hose",
-        "value": "High Tensile Flexible SS Pipe"
-      },
-      {
-        "label": "Finish",
-        "value": "Brushed Satin Mirror Polish"
-      },
-      {
-        "label": "Durability",
-        "value": "Non-bending Heavy Gauge Plate"
-      }
-    ]
-  },
-  {
-    "id": "gtc017",
-    "code": "GTC017",
-    "name": "Overhead Rain Shower (Ultra Slim Square)",
+    "name": "Shower – Ultra Slim",
     "category": "Showers",
-    "description": "Luxury ultra-slim overhead rain shower crafted from mirror-polished 304 stainless steel. Features laser-welded seams and soft silicone anti-limescale jet nozzles for a full drenching spa experience.",
+    "description": "Sizes: 4, 6 and 8 inch; Material: Stainless steel. Square ultra-slim shower.",
     "unit": "Piece",
     "badge": "LUXURY RAIN",
     "deal": true,
@@ -752,12 +571,12 @@ export const products = [
       "5 Pcs Box",
       "20 Pcs Master"
     ],
-    "image": "/images/products/gtc017.jpg",
+    "image": "/images/products/gtc015.jpg",
     "images": [
-      "/images/products/gtc017.jpg",
-      "/images/products/gtc017_exploded.jpg",
-      "/images/products/gtc017_angles.jpg",
-      "/images/products/gtc017_usage.jpg"
+      "/images/products/gtc015.jpg",
+      "/images/products/gtc015_exploded.jpg",
+      "/images/products/gtc015_angles.jpg",
+      "/images/products/gtc015_usage.jpg"
     ],
     "specifications": [
       {
@@ -765,29 +584,17 @@ export const products = [
         "value": "Grade 304 Stainless Steel"
       },
       {
-        "label": "Profile",
-        "value": "Ultra-Slim 2mm Mirror Profile"
-      },
-      {
-        "label": "Nozzles",
-        "value": "Soft Anti-Clog Food-Grade Silicon"
-      },
-      {
-        "label": "Sizes",
-        "value": "4\" \u00d7 4\", 6\" \u00d7 6\", 8\" \u00d7 8\" Square"
-      },
-      {
-        "label": "Swivel",
-        "value": "360\u00b0 Rotatable Brass Ball Joint"
+        "label": "Available Sizes",
+        "value": "4\", 6\", 8\" Square"
       }
     ]
   },
   {
-    "id": "gtc018",
-    "code": "GTC018",
-    "name": "Overhead Shower (Amaze Geometric Pattern)",
+    "id": "gtc016",
+    "code": "GTC016",
+    "name": "Shower – Amaze",
     "category": "Showers",
-    "description": "Striking geometric maze spray pattern designed to balance water pressure across the entire shower face. Mirror finish stainless steel with swivel ball adapter.",
+    "description": "Sizes: 6 and 8 inch; Material: Stainless steel. Square-pattern SS shower.",
     "unit": "Piece",
     "badge": "DESIGNER",
     "deal": false,
@@ -801,144 +608,122 @@ export const products = [
       "5 Pcs Box",
       "20 Pcs Master"
     ],
-    "image": "/images/products/gtc018.jpg",
+    "image": "/images/products/gtc016.jpg",
     "images": [
-      "/images/products/gtc018.jpg",
-      "/images/products/gtc018_exploded.jpg",
-      "/images/products/gtc018_angles.jpg"
+      "/images/products/gtc016.jpg",
+      "/images/products/gtc016_exploded.jpg",
+      "/images/products/gtc016_angles.jpg"
     ],
     "specifications": [
       {
-        "label": "Pattern",
-        "value": "Amaze Concentric Flow Distribution"
-      },
-      {
         "label": "Material",
-        "value": "Stainless Steel 304 Mirror Body"
+        "value": "Stainless Steel 304"
       },
       {
-        "label": "Sizes",
-        "value": "6\" \u00d7 6\", 8\" \u00d7 8\""
-      },
-      {
-        "label": "Pressure",
-        "value": "Air-Injection High Flow Efficiency"
+        "label": "Available Sizes",
+        "value": "6\", 8\" Square"
       }
     ]
   },
   {
-    "id": "gtc019",
-    "code": "GTC019",
-    "name": "Heavy Duty Health Faucet Kit (ABS + SS 304)",
+    "id": "gtc017",
+    "code": "GTC017",
+    "name": "Health Faucet",
     "category": "Health & Jet Sprays",
-    "description": "Complete bathroom bidet shower set featuring an ergonomic ABS spray gun head, 1-meter 304 stainless steel flexible hose, and wall mount hook. Delivers a soft yet powerful rinsing stream.",
+    "description": "Tube: 1 meter; Material: Grade 304 SS; Heavy duty; Made with ABS. Handheld health faucet with hose.",
     "unit": "Set",
     "badge": "COMPLETE SET",
     "deal": true,
     "dealLabel": "TOP SELLER",
     "sizes": [
-      "1.0 Meter Tube + Gun"
+      "1.0 Meter Hose"
     ],
     "packetSizes": [
       "1 Pc",
       "10 Pcs Box",
       "50 Pcs Master"
     ],
-    "image": "/images/products/gtc019.jpg",
+    "image": "/images/products/gtc017.jpg",
     "images": [
-      "/images/products/gtc019.jpg",
-      "/images/products/gtc019_exploded.jpg",
-      "/images/products/gtc019_angles.jpg",
-      "/images/products/gtc019_usage.jpg"
+      "/images/products/gtc017.jpg",
+      "/images/products/gtc017_exploded.jpg",
+      "/images/products/gtc017_angles.jpg",
+      "/images/products/gtc017_usage.jpg"
     ],
     "specifications": [
       {
-        "label": "Gun Head",
-        "value": "Impact Resistant Heavy ABS with Chrome Accent"
-      },
-      {
-        "label": "Trigger",
-        "value": "Feather Touch Ergonomic Push Lever"
+        "label": "Gun Material",
+        "value": "ABS Chrome"
       },
       {
         "label": "Tube",
-        "value": "1.0 Meter Grade 304 SS Flexible Hose"
-      },
-      {
-        "label": "Holder",
-        "value": "Wall Mounting Hook & Screws Included"
+        "value": "1 Meter Grade 304 SS"
       }
     ]
   },
   {
-    "id": "gtc020",
-    "code": "GTC020",
-    "name": "uPVC 90\u00b0 Elbow Plain (White)",
+    "id": "gtc018",
+    "code": "GTC018",
+    "name": "Elbow Plain",
     "category": "uPVC Fittings",
-    "description": "Heavy duty 90-degree uPVC solvent weld elbow fitting. Smooth internal walls minimize water friction and prevent scaling in residential cold water plumbing.",
+    "description": "Sizes: 1/2×1/2 – 100 pcs; 1×1 – 50 pcs; 1½×1½ – 20 pcs; 1×1/2 – 50 pcs. White plain 90° elbow.",
     "unit": "Piece",
     "badge": "PLUMBING CORE",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\"",
-      "1\u00bd\u00d71\u00bd\"",
-      "1\u00d71/2\""
+      "1/2×1/2",
+      "1×1",
+      "1½×1½",
+      "1×1/2"
     ],
     "packetSizes": [
-      "100 Pcs Pkt (1/2\")",
-      "50 Pcs Pkt (1\")",
-      "20 Pcs Pkt (1\u00bd\")"
+      "100 pcs (1/2×1/2)",
+      "50 pcs (1×1)",
+      "20 pcs (1½×1½)",
+      "50 pcs (1×1/2)"
     ],
-    "image": "/images/products/gtc020.jpg",
+    "image": "/images/products/gtc018.jpg",
     "images": [
-      "/images/products/gtc020.jpg",
-      "/images/products/gtc020_exploded.jpg"
+      "/images/products/gtc018.jpg",
+      "/images/products/gtc018_exploded.jpg"
     ],
     "specifications": [
       {
         "label": "Material",
-        "value": "100% Virgin uPVC (Lead-Free)"
+        "value": "100% Virgin uPVC"
       },
       {
-        "label": "Angle",
-        "value": "90 Degree Precision Mold"
-      },
-      {
-        "label": "Pressure Rating",
-        "value": "ASTM D-2466 / D-1785 Standard"
-      },
-      {
-        "label": "Colour",
-        "value": "Bright Plumbing White"
+        "label": "Type",
+        "value": "White 90° Plain Elbow"
       }
     ]
   },
   {
-    "id": "gtc021",
-    "code": "GTC021",
-    "name": "uPVC 3-Way TEE Plain (White)",
+    "id": "gtc019",
+    "code": "GTC019",
+    "name": "TEE Plain",
     "category": "uPVC Fittings",
-    "description": "3-way equal and reducing uPVC TEE for reliable pipe line branching. Engineered for strong solvent weld bonding and heavy pressure resistance.",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 25 pcs; 1½×1½ – 10 pcs; 1×1/2 – 25 pcs. White T fitting.",
     "unit": "Piece",
     "badge": "HIGH STRENGTH",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\"",
-      "1\u00bd\u00d71\u00bd\"",
-      "1\u00d71/2\""
+      "1/2×1/2",
+      "1×1",
+      "1½×1½",
+      "1×1/2"
     ],
     "packetSizes": [
-      "50 Pcs Pkt (1/2\")",
-      "25 Pcs Pkt (1\")",
-      "10 Pcs Pkt (1\u00bd\")"
+      "50 pcs (1/2×1/2)",
+      "25 pcs (1×1)",
+      "10 pcs (1½×1½)",
+      "25 pcs (1×1/2)"
     ],
-    "image": "/images/products/gtc021.jpg",
+    "image": "/images/products/gtc019.jpg",
     "images": [
-      "/images/products/gtc021.jpg"
+      "/images/products/gtc019.jpg"
     ],
     "specifications": [
       {
@@ -946,35 +731,94 @@ export const products = [
         "value": "Unplasticized Polyvinyl Chloride"
       },
       {
-        "label": "Ports",
-        "value": "3-Way Equal / Reducing Socket"
-      },
+        "label": "Type",
+        "value": "White 3-Way TEE"
+      }
+    ]
+  },
+  {
+    "id": "gtc020",
+    "code": "GTC020",
+    "name": "Coupler",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 1/2×1/2 – 100 pcs; 1×1 – 50 pcs; 1½×1½ – 25 pcs; 1×1/2 – 100 pcs. White cylindrical coupler.",
+    "unit": "Piece",
+    "badge": "ESSENTIAL",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "1/2×1/2",
+      "1×1",
+      "1½×1½",
+      "1×1/2"
+    ],
+    "packetSizes": [
+      "100 pcs (1/2×1/2)",
+      "50 pcs (1×1)",
+      "25 pcs (1½×1½)",
+      "100 pcs (1×1/2)"
+    ],
+    "image": "/images/products/gtc020.jpg",
+    "images": [
+      "/images/products/gtc020.jpg"
+    ],
+    "specifications": [
       {
-        "label": "Sizes",
-        "value": "1/2x1/2, 1x1, 1\u00bdx1\u00bd, 1x1/2"
+        "label": "Type",
+        "value": "Straight Coupling Socket"
+      }
+    ]
+  },
+  {
+    "id": "gtc021",
+    "code": "GTC021",
+    "name": "Union",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 25 pcs; 1½×1½ – 10 pcs. White union fitting.",
+    "unit": "Piece",
+    "badge": "SERVICE UNION",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "1/2×1/2",
+      "1×1",
+      "1½×1½"
+    ],
+    "packetSizes": [
+      "50 pcs (1/2×1/2)",
+      "25 pcs (1×1)",
+      "10 pcs (1½×1½)"
+    ],
+    "image": "/images/products/gtc021.jpg",
+    "images": [
+      "/images/products/gtc021.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Assembly",
+        "value": "3-Piece Threaded Union"
       }
     ]
   },
   {
     "id": "gtc022",
     "code": "GTC022",
-    "name": "uPVC Straight Coupler Socket (White)",
-    "category": "uPVC Fittings",
-    "description": "High-precision straight uPVC coupling socket for joining two pipe segments. Deep socket depth ensures maximum contact surface for leak-proof solvent welds.",
+    "name": "Elbow Brass",
+    "category": "Brass Threaded Fittings",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 25 pcs; 1×1/2 – 50 pcs. White elbow with brass insert.",
     "unit": "Piece",
-    "badge": "ESSENTIAL",
-    "deal": false,
-    "dealLabel": "",
+    "badge": "BRASS INSERT",
+    "deal": true,
+    "dealLabel": "HIGH DEMAND",
     "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\"",
-      "1\u00bd\u00d71\u00bd\"",
-      "1\u00d71/2\""
+      "1/2×1/2",
+      "1×1",
+      "1×1/2"
     ],
     "packetSizes": [
-      "100 Pcs Pkt (1/2\")",
-      "50 Pcs Pkt (1\")",
-      "25 Pcs Pkt (1\u00bd\")"
+      "50 pcs (1/2×1/2)",
+      "25 pcs (1×1)",
+      "50 pcs (1×1/2)"
     ],
     "image": "/images/products/gtc022.jpg",
     "images": [
@@ -982,38 +826,30 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Type",
-        "value": "Straight Coupling Socket"
-      },
-      {
-        "label": "Material",
-        "value": "Heavy-wall Virgin uPVC"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2x1/2, 1x1, 1\u00bdx1\u00bd, 1x1/2"
+        "label": "Thread",
+        "value": "Forged Brass Female Insert"
       }
     ]
   },
   {
     "id": "gtc023",
     "code": "GTC023",
-    "name": "uPVC 3-Piece Pipe Union (White)",
-    "category": "uPVC Fittings",
-    "description": "Allows easy disconnection of pump lines, water meters, and filters without cutting pipes. Heavy threaded tightening ring with watertight internal rubber gasket.",
+    "name": "MTA Brass",
+    "category": "Brass Threaded Fittings",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 50 pcs; 1×1/2 – 50 pcs. White fitting with external brass thread.",
     "unit": "Piece",
-    "badge": "SERVICE UNION",
+    "badge": "BRASS MTA",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\"",
-      "1\u00bd\u00d71\u00bd\""
+      "1/2×1/2",
+      "1×1",
+      "1×1/2"
     ],
     "packetSizes": [
-      "50 Pcs Pkt (1/2\")",
-      "25 Pcs Pkt (1\")",
-      "10 Pcs Pkt (1\u00bd\")"
+      "50 pcs (1/2×1/2)",
+      "50 pcs (1×1)",
+      "50 pcs (1×1/2)"
     ],
     "image": "/images/products/gtc023.jpg",
     "images": [
@@ -1021,37 +857,30 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Assembly",
-        "value": "3-Piece Disconnectable Threaded Union"
-      },
-      {
-        "label": "Seal",
-        "value": "Chemical Resistant EPDM Rubber O-Ring"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2\", 1\", 1\u00bd\""
+        "label": "Thread",
+        "value": "Solid Outer Brass Male Thread"
       }
     ]
   },
   {
     "id": "gtc024",
     "code": "GTC024",
-    "name": "uPVC 90\u00b0 Elbow with Brass Thread (White)",
+    "name": "TEE Brass",
     "category": "Brass Threaded Fittings",
-    "description": "Heavy uPVC 90-degree elbow equipped with a knurled brass female insert. Ideal for installing faucets, angle valves, and shower arms into concealed wall lines.",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 25 pcs; 1×1/2 – 25 pcs. T fitting with brass threaded insert.",
     "unit": "Piece",
-    "badge": "BRASS INSERT",
-    "deal": true,
-    "dealLabel": "HIGH DEMAND",
+    "badge": "BRASS TEE",
+    "deal": false,
+    "dealLabel": "",
     "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\"",
-      "1\u00d71/2\""
+      "1/2×1/2",
+      "1×1",
+      "1×1/2"
     ],
     "packetSizes": [
-      "50 Pcs Pkt (1/2\")",
-      "25 Pcs Pkt (1\")"
+      "50 pcs (1/2×1/2)",
+      "25 pcs (1×1)",
+      "25 pcs (1×1/2)"
     ],
     "image": "/images/products/gtc024.jpg",
     "images": [
@@ -1059,74 +888,62 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Thread",
-        "value": "Molded-in Heavy Forged Brass Female"
-      },
-      {
-        "label": "Body",
-        "value": "Thick Reinforced White uPVC"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2x1/2, 1x1, 1x1/2"
+        "label": "Center Branch",
+        "value": "Brass Female Threaded Port"
       }
     ]
   },
   {
     "id": "gtc025",
     "code": "GTC025",
-    "name": "uPVC Male Threaded Adapter MTA Brass (White)",
-    "category": "Brass Threaded Fittings",
-    "description": "Transition adapter with heavy solid brass male threading on one side and a solvent weld uPVC socket on the other. Connects metal fixtures directly to plastic pipe systems.",
+    "name": "Tank Nipple – Threaded",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 50 pcs; 1½×1½ – 25 pcs. Threaded tank nipple.",
     "unit": "Piece",
-    "badge": "BRASS MTA",
+    "badge": "TANK CONNECTOR",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\"",
-      "1\u00d71/2\""
+      "1/2×1/2",
+      "1×1",
+      "1½×1½"
     ],
     "packetSizes": [
-      "50 Pcs Pkt"
+      "50 pcs (1/2×1/2)",
+      "50 pcs (1×1)",
+      "25 pcs (1½×1½)"
     ],
     "image": "/images/products/gtc025.jpg",
     "images": [
-      "/images/products/gtc025.jpg"
+      "/images/products/gtc025.jpg",
+      "/images/products/gtc025_exploded.jpg"
     ],
     "specifications": [
       {
-        "label": "Thread",
-        "value": "Solid Outer Brass Male Thread"
-      },
-      {
-        "label": "Socket",
-        "value": "uPVC Solvent Weld Socket"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2x1/2, 1x1, 1x1/2"
+        "label": "Structure",
+        "value": "Double Threaded Barrel with Nut"
       }
     ]
   },
   {
     "id": "gtc026",
     "code": "GTC026",
-    "name": "uPVC 3-Way TEE with Brass Thread (White)",
-    "category": "Brass Threaded Fittings",
-    "description": "Reinforced 3-way uPVC TEE fitting with a solid brass female center thread for connecting taps or pressure gauges along pipe runs.",
+    "name": "Tank Nipple Socket",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 50 pcs; 1½×1½ – 25 pcs. Tank socket with threaded section.",
     "unit": "Piece",
-    "badge": "BRASS TEE",
+    "badge": "TANK OUTLET",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\"",
-      "1\u00d71/2\""
+      "1/2×1/2",
+      "1×1",
+      "1½×1½"
     ],
     "packetSizes": [
-      "50 Pcs Pkt (1/2\")",
-      "25 Pcs Pkt (1\")"
+      "50 pcs (1/2×1/2)",
+      "50 pcs (1×1)",
+      "25 pcs (1½×1½)"
     ],
     "image": "/images/products/gtc026.jpg",
     "images": [
@@ -1134,104 +951,17 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Center Branch",
-        "value": "Brass Female Threaded Port"
-      },
-      {
-        "label": "Run Sockets",
-        "value": "uPVC Solvent Weld Ports"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2x1/2, 1x1, 1x1/2"
+        "label": "Connection",
+        "value": "Tank Mount to Socket Weld"
       }
     ]
   },
   {
     "id": "gtc027",
     "code": "GTC027",
-    "name": "Overhead Tank Nipple Threaded (White)",
+    "name": "End Cap",
     "category": "uPVC Fittings",
-    "description": "Water tank connection connector with dual threaded barrel and thick rubber compression seal for leak-free tank inlets and outlets.",
-    "unit": "Piece",
-    "badge": "TANK CONNECTOR",
-    "deal": false,
-    "dealLabel": "",
-    "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\"",
-      "1\u00bd\u00d71\u00bd\""
-    ],
-    "packetSizes": [
-      "50 Pcs Pkt (1/2\", 1\")",
-      "25 Pcs Pkt (1\u00bd\")"
-    ],
-    "image": "/images/products/gtc027.jpg",
-    "images": [
-      "/images/products/gtc027.jpg",
-      "/images/products/gtc027_exploded.jpg",
-      "/images/products/gtc027_angles.jpg",
-      "/images/products/gtc027_usage.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Structure",
-        "value": "Double Threaded Barrel with Nut"
-      },
-      {
-        "label": "Gasket",
-        "value": "Heavy Duty Waterproof Rubber Washer"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2\", 1\", 1\u00bd\""
-      }
-    ]
-  },
-  {
-    "id": "gtc028",
-    "code": "GTC028",
-    "name": "Overhead Tank Nipple Socket (White)",
-    "category": "uPVC Fittings",
-    "description": "Direct socket-end tank adapter. Mounts through the water tank wall and allows immediate solvent welding of the distribution pipe.",
-    "unit": "Piece",
-    "badge": "TANK OUTLET",
-    "deal": false,
-    "dealLabel": "",
-    "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\"",
-      "1\u00bd\u00d71\u00bd\""
-    ],
-    "packetSizes": [
-      "50 Pcs Pkt (1/2\", 1\")",
-      "25 Pcs Pkt (1\u00bd\")"
-    ],
-    "image": "/images/products/gtc028.jpg",
-    "images": [
-      "/images/products/gtc028.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Connection",
-        "value": "Threaded Tank Mount to Socket Weld"
-      },
-      {
-        "label": "Material",
-        "value": "High Density White uPVC"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2\", 1\", 1\u00bd\""
-      }
-    ]
-  },
-  {
-    "id": "gtc029",
-    "code": "GTC029",
-    "name": "uPVC End Cap Pipe Stopper (White)",
-    "category": "uPVC Fittings",
-    "description": "Dead-end termination cap for capping uPVC lines during pressure testing or pipeline extension planning.",
+    "description": "Sizes: 1/2 inch – 100 pcs; 1 inch – 50 pcs; 1½ inch – 25 pcs. White cylindrical end cap.",
     "unit": "Piece",
     "badge": "TERMINATOR",
     "deal": false,
@@ -1239,12 +969,70 @@ export const products = [
     "sizes": [
       "1/2 Inch",
       "1 Inch",
-      "1\u00bd Inch"
+      "1½ Inch"
     ],
     "packetSizes": [
-      "100 Pcs Pkt (1/2\")",
-      "50 Pcs Pkt (1\")",
-      "25 Pcs Pkt (1\u00bd\")"
+      "100 pcs (1/2\")",
+      "50 pcs (1\")",
+      "25 pcs (1½\")"
+    ],
+    "image": "/images/products/gtc027.jpg",
+    "images": [
+      "/images/products/gtc027.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Solvent Weld End Cap"
+      }
+    ]
+  },
+  {
+    "id": "gtc028",
+    "code": "GTC028",
+    "name": "45° Elbow",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 1/2×1/2 – 100 pcs; 1×1 – 50 pcs. 45-degree elbow.",
+    "unit": "Piece",
+    "badge": "SMOOTH BEND",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "1/2×1/2",
+      "1×1"
+    ],
+    "packetSizes": [
+      "100 pcs (1/2×1/2)",
+      "50 pcs (1×1)"
+    ],
+    "image": "/images/products/gtc028.jpg",
+    "images": [
+      "/images/products/gtc028.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Angle",
+        "value": "45 Degree Sweep"
+      }
+    ]
+  },
+  {
+    "id": "gtc029",
+    "code": "GTC029",
+    "name": "Cross Tee",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 25 pcs. Four-way cross fitting.",
+    "unit": "Piece",
+    "badge": "4-WAY CROSS",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "1/2×1/2",
+      "1×1"
+    ],
+    "packetSizes": [
+      "50 pcs (1/2×1/2)",
+      "25 pcs (1×1)"
     ],
     "image": "/images/products/gtc029.jpg",
     "images": [
@@ -1253,98 +1041,16 @@ export const products = [
     "specifications": [
       {
         "label": "Type",
-        "value": "Solvent Weld Pipe End Cap"
-      },
-      {
-        "label": "Pressure",
-        "value": "High Pressure Proof"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2\", 1\", 1\u00bd\""
+        "value": "4-Way Cross Tee"
       }
     ]
   },
   {
     "id": "gtc030",
     "code": "GTC030",
-    "name": "uPVC 45\u00b0 Elbow Bend (White)",
-    "category": "uPVC Fittings",
-    "description": "45-degree angled elbow designed to navigate gradual offsets with minimal hydraulic resistance.",
-    "unit": "Piece",
-    "badge": "SMOOTH BEND",
-    "deal": false,
-    "dealLabel": "",
-    "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\""
-    ],
-    "packetSizes": [
-      "100 Pcs Pkt (1/2\")",
-      "50 Pcs Pkt (1\")"
-    ],
-    "image": "/images/products/gtc030.jpg",
-    "images": [
-      "/images/products/gtc030.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Angle",
-        "value": "45 Degree Low Resistance Sweep"
-      },
-      {
-        "label": "Material",
-        "value": "Virgin uPVC"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2x1/2, 1x1"
-      }
-    ]
-  },
-  {
-    "id": "gtc031",
-    "code": "GTC031",
-    "name": "uPVC 4-Way Cross TEE (White)",
-    "category": "uPVC Fittings",
-    "description": "Four-way cross distribution fitting for complex plumbing manifolds and multi-directional irrigation networks.",
-    "unit": "Piece",
-    "badge": "4-WAY CROSS",
-    "deal": false,
-    "dealLabel": "",
-    "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\""
-    ],
-    "packetSizes": [
-      "50 Pcs Pkt (1/2\")",
-      "25 Pcs Pkt (1\")"
-    ],
-    "image": "/images/products/gtc031.jpg",
-    "images": [
-      "/images/products/gtc031.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Configuration",
-        "value": "4-Way Equal Cross Junction"
-      },
-      {
-        "label": "Material",
-        "value": "Heavy Duty White uPVC"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2x1/2, 1x1"
-      }
-    ]
-  },
-  {
-    "id": "gtc032",
-    "code": "GTC032",
-    "name": "uPVC Ball Valve (Long Lever Handle)",
+    "name": "Ball Valve – Long Handle",
     "category": "Valves & Spindles",
-    "description": "Full-bore uPVC quarter-turn isolation ball valve. Long blue lever provides effortless quarter-turn shutoff with zero head loss.",
+    "description": "Sizes: 1/2 inch – 24 pcs; 1 inch – 10 pcs; 1½ inch – 5 pcs. White valve with blue long handle.",
     "unit": "Piece",
     "badge": "FULL FLOW",
     "deal": true,
@@ -1352,135 +1058,80 @@ export const products = [
     "sizes": [
       "1/2 Inch",
       "1 Inch",
-      "1\u00bd Inch"
+      "1½ Inch"
     ],
     "packetSizes": [
-      "24 Pcs Box (1/2\")",
-      "10 Pcs Box (1\")",
-      "5 Pcs Box (1\u00bd\")"
+      "24 pcs (1/2\")",
+      "10 pcs (1\")",
+      "5 pcs (1½\")"
     ],
-    "image": "/images/products/gtc032.jpg",
+    "image": "/images/products/gtc030.jpg",
     "images": [
-      "/images/products/gtc032.jpg"
+      "/images/products/gtc030.jpg"
     ],
     "specifications": [
       {
         "label": "Handle",
-        "value": "Ergonomic Blue Long Lever"
-      },
-      {
-        "label": "Ball Core",
-        "value": "Mirror Smooth PVC Ball"
-      },
-      {
-        "label": "Seals",
-        "value": "High Performance PTFE / EPDM Rings"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2\", 1\", 1\u00bd\""
+        "value": "Blue Long Lever"
       }
     ]
   },
   {
-    "id": "gtc033",
-    "code": "GTC033",
-    "name": "uPVC Step Over Crossover Bend",
+    "id": "gtc031",
+    "code": "GTC031",
+    "name": "Step Over Bend",
     "category": "uPVC Fittings",
-    "description": "Engineered step-over crossover fitting for routing one water pipeline over another intersecting line cleanly without awkward elbows.",
+    "description": "Sizes: 1/2×1/2 – 25 pcs; 1×1 – 20 pcs. Curved step-over pipe fitting.",
     "unit": "Piece",
     "badge": "CROSSOVER",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\""
+      "1/2×1/2",
+      "1×1"
     ],
     "packetSizes": [
-      "25 Pcs Pkt (1/2\")",
-      "20 Pcs Pkt (1\")"
+      "25 pcs (1/2×1/2)",
+      "20 pcs (1×1)"
     ],
-    "image": "/images/products/gtc033.jpg",
+    "image": "/images/products/gtc031.jpg",
     "images": [
-      "/images/products/gtc033.jpg"
+      "/images/products/gtc031.jpg"
     ],
     "specifications": [
       {
         "label": "Profile",
-        "value": "Pre-formed S-Curve Crossover Bridge"
-      },
-      {
-        "label": "Stripes",
-        "value": "Blue Identification Line"
-      },
-      {
-        "label": "Sizes",
-        "value": "1/2x1/2, 1x1"
+        "value": "S-Curve Crossover Bridge"
       }
     ]
   },
   {
-    "id": "gtc034",
-    "code": "GTC034",
-    "name": "Hex Extension Nipple (Stainless Steel)",
+    "id": "gtc032",
+    "code": "GTC032",
+    "name": "uPVC Pipe – ASTM D-1785 3 Meter",
     "category": "Pipes & Hoses",
-    "description": "Solid steel hex extension adapter for bringing deeply recessed wall pipe fittings flush with newly tiled bathroom surfaces.",
-    "unit": "Piece",
-    "badge": "EXTENSION",
-    "deal": false,
-    "dealLabel": "",
-    "sizes": [
-      "1/2\u00d71/2\"",
-      "1\u00d71\""
-    ],
-    "packetSizes": [
-      "25 Pcs Pkt (1/2\")",
-      "20 Pcs Pkt (1\")"
-    ],
-    "image": "/images/products/gtc034.jpg",
-    "images": [
-      "/images/products/gtc034.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Body",
-        "value": "Hexagonal Male-Female Stainless Steel"
-      },
-      {
-        "label": "Size",
-        "value": "1/2\" BSP Extension"
-      },
-      {
-        "label": "Application",
-        "value": "Concealed Fitting Extension"
-      }
-    ]
-  },
-  {
-    "id": "gtc035",
-    "code": "GTC035",
-    "name": "uPVC Pressure Pipes (ASTM D-1785 SCH-40 & 80)",
-    "category": "Pipes & Hoses",
-    "description": "Premium uPVC pressure pipes manufactured strictly per ASTM D-1785 standards. Available in SCH-40 and SCH-80 ratings in both 3M and 6M lengths for potable water distribution.",
+    "description": "3 Meter; SCH-40 & SCH-80; 1/2 inch, 1 inch, 1½ inch. ASTM D-1785 uPVC pressure pipes.",
     "unit": "Length",
     "badge": "ASTM D-1785",
     "deal": true,
-    "dealLabel": "TOP GRADE",
+    "dealLabel": "3 METER",
     "sizes": [
-      "1/2 Inch (SCH 40/80)",
-      "1 Inch (SCH 40/80)",
-      "1\u00bd Inch (SCH 40/80)"
+      "1/2\" SCH-40",
+      "1\" SCH-40",
+      "1½\" SCH-40",
+      "1/2\" SCH-80",
+      "1\" SCH-80",
+      "1½\" SCH-80"
     ],
     "packetSizes": [
-      "50 Pcs Bundle (1/2\" 3M)",
-      "30 Pcs Bundle (1\" 3M)",
-      "15 Pcs Bundle (1\u00bd\" 3M)",
-      "40 Pcs Bundle (1/2\" 6M)",
-      "20 Pcs Bundle (1\" 6M)"
+      "50 pcs/bundle (1/2\")",
+      "30 pcs/bundle (1\")",
+      "25 pcs/bundle (1\")",
+      "15 pcs/bundle (1½\")"
     ],
-    "image": "/images/products/gtc035.jpg",
+    "image": "/images/products/gtc032.jpg",
     "images": [
-      "/images/products/gtc035.jpg"
+      "/images/products/gtc032.jpg"
     ],
     "specifications": [
       {
@@ -1489,38 +1140,144 @@ export const products = [
       },
       {
         "label": "Schedules",
-        "value": "SCH-40 (Blue Stripe) & SCH-80 (Heavy)"
+        "value": "SCH-40 & SCH-80"
       },
       {
-        "label": "Lengths",
-        "value": "3 Meter & 6 Meter Lengths"
+        "label": "Length",
+        "value": "3 Meter"
+      }
+    ]
+  },
+  {
+    "id": "gtc033",
+    "code": "GTC033",
+    "name": "uPVC Pipe – ASTM D-1785 6 Meter",
+    "category": "Pipes & Hoses",
+    "description": "6 Meter; SCH-40 & SCH-80; 1/2 inch, 1 inch, 1½ inch. ASTM D-1785 uPVC pressure pipes.",
+    "unit": "Length",
+    "badge": "ASTM D-1785",
+    "deal": true,
+    "dealLabel": "6 METER",
+    "sizes": [
+      "1/2\" SCH-40",
+      "1\" SCH-40",
+      "1½\" SCH-40",
+      "1/2\" SCH-80",
+      "1\" SCH-80",
+      "1½\" SCH-80"
+    ],
+    "packetSizes": [
+      "40 pcs/bundle (1/2\")",
+      "20 pcs/bundle (1\")",
+      "10 pcs/bundle (1½\")",
+      "8 pcs/bundle (1½\")"
+    ],
+    "image": "/images/products/gtc033.jpg",
+    "images": [
+      "/images/products/gtc033.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Standard",
+        "value": "ASTM D-1785 Standard"
       },
       {
-        "label": "UV Resistance",
-        "value": "100% UV Stabilized Polymer"
+        "label": "Schedules",
+        "value": "SCH-40 & SCH-80"
+      },
+      {
+        "label": "Length",
+        "value": "6 Meter"
+      }
+    ]
+  },
+  {
+    "id": "gtc034",
+    "code": "GTC034",
+    "name": "Elbow Plain (3/4\", 1\", 1¼\")",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 3/4×3/4 – 100 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs; 1×3/4 – 50 pcs. Plain elbow.",
+    "unit": "Piece",
+    "badge": "PLUMBING CORE",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "3/4×3/4",
+      "1×1",
+      "1¼×1¼",
+      "1×3/4"
+    ],
+    "packetSizes": [
+      "100 pcs (3/4×3/4)",
+      "50 pcs (1×1)",
+      "25 pcs (1¼×1¼)",
+      "50 pcs (1×3/4)"
+    ],
+    "image": "/images/products/gtc034.jpg",
+    "images": [
+      "/images/products/gtc034.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Plain uPVC 90° Elbow"
+      }
+    ]
+  },
+  {
+    "id": "gtc035",
+    "code": "GTC035",
+    "name": "TEE Plain (3/4\", 1\", 1¼\")",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 3/4×3/4 – 100 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs; 1×3/4 – 50 pcs. Plain T fitting.",
+    "unit": "Piece",
+    "badge": "PLUMBING CORE",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "3/4×3/4",
+      "1×1",
+      "1¼×1¼",
+      "1×3/4"
+    ],
+    "packetSizes": [
+      "100 pcs (3/4×3/4)",
+      "50 pcs (1×1)",
+      "25 pcs (1¼×1¼)",
+      "50 pcs (1×3/4)"
+    ],
+    "image": "/images/products/gtc035.jpg",
+    "images": [
+      "/images/products/gtc035.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Plain uPVC TEE"
       }
     ]
   },
   {
     "id": "gtc036",
     "code": "GTC036",
-    "name": "CPVC 90\u00b0 Elbow Plain (Hot & Cold Cream)",
-    "category": "CPVC Fittings",
-    "description": "High temperature resistant CPVC 90-degree elbow for pressurized hot and cold water plumbing lines in bathrooms and kitchens.",
+    "name": "Coupler (3/4\", 1\", 1¼\")",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 3/4×3/4 – 100 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs; 1×3/4 – 100 pcs. Plain cylindrical coupler.",
     "unit": "Piece",
-    "badge": "HOT & COLD",
+    "badge": "ESSENTIAL",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "3/4\u00d73/4\"",
-      "1\u00d71\"",
-      "1\u00bc\u00d71\u00bc\"",
-      "1\u00d73/4\""
+      "3/4×3/4",
+      "1×1",
+      "1¼×1¼",
+      "1×3/4"
     ],
     "packetSizes": [
-      "100 Pcs Pkt (3/4\")",
-      "50 Pcs Pkt (1\")",
-      "25 Pcs Pkt (1\u00bc\")"
+      "100 pcs (3/4×3/4)",
+      "50 pcs (1×1)",
+      "25 pcs (1¼×1¼)",
+      "100 pcs (1×3/4)"
     ],
     "image": "/images/products/gtc036.jpg",
     "images": [
@@ -1528,43 +1285,30 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Material",
-        "value": "Chlorinated Polyvinyl Chloride (CPVC)"
-      },
-      {
-        "label": "Temp Rating",
-        "value": "Up to 93\u00b0C Hot Water Continuous"
-      },
-      {
-        "label": "Pressure",
-        "value": "SDR-11 Standard Rating"
-      },
-      {
-        "label": "Colour",
-        "value": "Cream / Beige"
+        "label": "Type",
+        "value": "Coupler Socket"
       }
     ]
   },
   {
     "id": "gtc037",
     "code": "GTC037",
-    "name": "CPVC 3-Way TEE Plain (Cream)",
-    "category": "CPVC Fittings",
-    "description": "3-way CPVC TEE branch fitting built to withstand high geyser temperatures and thermal expansion.",
+    "name": "Union (3/4\", 1\", 1¼\")",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 3/4×3/4 – 50 pcs; 1×1 – 25 pcs; 1¼×1¼ – 25 pcs. uPVC union fitting.",
     "unit": "Piece",
-    "badge": "SDR-11",
+    "badge": "SERVICE UNION",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "3/4\u00d73/4\"",
-      "1\u00d71\"",
-      "1\u00bc\u00d71\u00bc\"",
-      "1\u00d73/4\""
+      "3/4×3/4",
+      "1×1",
+      "1¼×1¼"
     ],
     "packetSizes": [
-      "100 Pcs Pkt (3/4\")",
-      "50 Pcs Pkt (1\")",
-      "25 Pcs Pkt (1\u00bc\")"
+      "50 pcs (3/4×3/4)",
+      "25 pcs (1×1)",
+      "25 pcs (1¼×1¼)"
     ],
     "image": "/images/products/gtc037.jpg",
     "images": [
@@ -1572,39 +1316,30 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Material",
-        "value": "Premium CPVC Compound"
-      },
-      {
-        "label": "Rating",
-        "value": "Tested for High Geyser Temperatures"
-      },
-      {
-        "label": "Sizes",
-        "value": "3/4x3/4, 1x1, 1\u00bcx1\u00bc, 1x3/4"
+        "label": "Type",
+        "value": "uPVC Union"
       }
     ]
   },
   {
     "id": "gtc038",
     "code": "GTC038",
-    "name": "CPVC Straight Coupler Socket (Cream)",
-    "category": "CPVC Fittings",
-    "description": "Precision socket CPVC coupler for seamless jointing of hot water line pipes with CPVC solvent cement.",
+    "name": "Union Brass Insert (3/4\", 1\", 1¼\")",
+    "category": "Brass Threaded Fittings",
+    "description": "Sizes: 3/4×3/4 – 50 pcs; 1×1 – 25 pcs; 1¼×1¼ – 25 pcs. Fitting with brass insert.",
     "unit": "Piece",
-    "badge": "HIGH TEMP",
-    "deal": false,
-    "dealLabel": "",
+    "badge": "BRASS UNION",
+    "deal": true,
+    "dealLabel": "HEAVY DUTY",
     "sizes": [
-      "3/4\u00d73/4\"",
-      "1\u00d71\"",
-      "1\u00bc\u00d71\u00bc\"",
-      "1\u00d73/4\""
+      "3/4×3/4",
+      "1×1",
+      "1¼×1¼"
     ],
     "packetSizes": [
-      "100 Pcs Pkt (3/4\")",
-      "50 Pcs Pkt (1\")",
-      "25 Pcs Pkt (1\u00bc\")"
+      "50 pcs (3/4×3/4)",
+      "25 pcs (1×1)",
+      "25 pcs (1¼×1¼)"
     ],
     "image": "/images/products/gtc038.jpg",
     "images": [
@@ -1613,36 +1348,29 @@ export const products = [
     "specifications": [
       {
         "label": "Type",
-        "value": "Straight Joining Coupling"
-      },
-      {
-        "label": "Material",
-        "value": "Virgin Heat-Tolerant CPVC"
-      },
-      {
-        "label": "Sizes",
-        "value": "3/4x3/4, 1x1, 1\u00bcx1\u00bc, 1x3/4"
+        "value": "Union with Brass Insert"
       }
     ]
   },
   {
     "id": "gtc039",
     "code": "GTC039",
-    "name": "CPVC 3-Piece Pipe Union (Cream)",
-    "category": "CPVC Fittings",
-    "description": "Thermal-stable CPVC union designed for geyser connections, solar water heaters, and water pumps for easy maintenance.",
+    "name": "MTA Brass (3/4\", 1\")",
+    "category": "Brass Threaded Fittings",
+    "description": "Sizes: 3/4×1/2 – 50 pcs; 1×1/2 – 50 pcs; 1×1 – 50 pcs. External brass-thread fitting.",
     "unit": "Piece",
-    "badge": "HOT WATER UNION",
+    "badge": "BRASS MALE",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "3/4\u00d73/4\"",
-      "1\u00d71\"",
-      "1\u00bc\u00d71\u00bc\""
+      "3/4×1/2",
+      "1×1/2",
+      "1×1"
     ],
     "packetSizes": [
-      "50 Pcs Pkt (3/4\")",
-      "25 Pcs Pkt (1\", 1\u00bc\")"
+      "50 pcs (3/4×1/2)",
+      "50 pcs (1×1/2)",
+      "50 pcs (1×1)"
     ],
     "image": "/images/products/gtc039.jpg",
     "images": [
@@ -1650,37 +1378,30 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Design",
-        "value": "3-Piece Quick Disconnect Union"
-      },
-      {
-        "label": "Gasket",
-        "value": "Heat-Resistant Silicone O-Ring"
-      },
-      {
-        "label": "Sizes",
-        "value": "3/4\", 1\", 1\u00bc\""
+        "label": "Thread",
+        "value": "External Brass Male Thread"
       }
     ]
   },
   {
     "id": "gtc040",
     "code": "GTC040",
-    "name": "CPVC 90\u00b0 Elbow with Brass Thread (Cream)",
+    "name": "FTA Brass (3/4\", 1\")",
     "category": "Brass Threaded Fittings",
-    "description": "Heavy CPVC 90-degree elbow with a forged brass female threaded insert. Designed to mount hot water geyser inlet/outlet valves and shower mixers.",
+    "description": "Sizes: 3/4×1/2 – 50 pcs; 1×1/2 – 50 pcs; 1×1 – 50 pcs. Internal brass-thread fitting.",
     "unit": "Piece",
-    "badge": "HEAVY BRASS",
-    "deal": true,
-    "dealLabel": "GEYSER READY",
+    "badge": "BRASS FEMALE",
+    "deal": false,
+    "dealLabel": "",
     "sizes": [
-      "3/4\u00d73/4\"",
-      "1\u00d71\"",
-      "1\u00bc\u00d71\u00bc\""
+      "3/4×1/2",
+      "1×1/2",
+      "1×1"
     ],
     "packetSizes": [
-      "50 Pcs Pkt (3/4\")",
-      "25 Pcs Pkt (1\", 1\u00bc\")"
+      "50 pcs (3/4×1/2)",
+      "50 pcs (1×1/2)",
+      "50 pcs (1×1)"
     ],
     "image": "/images/products/gtc040.jpg",
     "images": [
@@ -1689,35 +1410,29 @@ export const products = [
     "specifications": [
       {
         "label": "Thread",
-        "value": "Heavy Forged Brass Female Insert"
-      },
-      {
-        "label": "Body",
-        "value": "CPVC High Temperature Compound"
-      },
-      {
-        "label": "Sizes",
-        "value": "3/4x3/4, 1x1, 1\u00bcx1\u00bc"
+        "value": "Internal Brass Female Thread"
       }
     ]
   },
   {
     "id": "gtc041",
     "code": "GTC041",
-    "name": "CPVC Male Threaded Adapter MTA Brass (Cream)",
+    "name": "TEE Brass (3/4\", 1\")",
     "category": "Brass Threaded Fittings",
-    "description": "Transition MTA fitting with solid brass male threads and ribbed socket grip for connecting hot water valves and copper/iron pipes to CPVC.",
+    "description": "Sizes: 3/4×1/2 – 50 pcs; 1×1/2 – 50 pcs; 1×1 – 25 pcs. T fitting with brass insert.",
     "unit": "Piece",
-    "badge": "BRASS MALE",
+    "badge": "BRASS TEE",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "3/4\u00d71/2\"",
-      "1\u00d71/2\"",
-      "1\u00d71\""
+      "3/4×1/2",
+      "1×1/2",
+      "1×1"
     ],
     "packetSizes": [
-      "50 Pcs Pkt"
+      "50 pcs (3/4×1/2)",
+      "50 pcs (1×1/2)",
+      "25 pcs (1×1)"
     ],
     "image": "/images/products/gtc041.jpg",
     "images": [
@@ -1725,36 +1440,30 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Thread",
-        "value": "External Solid Brass Male BSP Thread"
-      },
-      {
-        "label": "Socket",
-        "value": "CPVC Solvent Weld Joint"
-      },
-      {
-        "label": "Sizes",
-        "value": "3/4x1/2, 1x1/2, 1x1"
+        "label": "Center Branch",
+        "value": "Brass Female Thread"
       }
     ]
   },
   {
     "id": "gtc042",
     "code": "GTC042",
-    "name": "CPVC Female Threaded Adapter FTA Brass (Cream)",
-    "category": "Brass Threaded Fittings",
-    "description": "Female threaded CPVC adapter with heavy internal brass threads and external hex ribs for secure wrench tightening.",
+    "name": "Tank Nipple Socket (3/4\", 1\", 1¼\")",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 3/4×3/4 – 50 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs. Tank nipple socket.",
     "unit": "Piece",
-    "badge": "BRASS FEMALE",
+    "badge": "HEAVY TANK",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "3/4\u00d71/2\"",
-      "1\u00d71/2\"",
-      "1\u00d71\""
+      "3/4×3/4",
+      "1×1",
+      "1¼×1¼"
     ],
     "packetSizes": [
-      "50 Pcs Pkt"
+      "50 pcs (3/4×3/4)",
+      "50 pcs (1×1)",
+      "25 pcs (1¼×1¼)"
     ],
     "image": "/images/products/gtc042.jpg",
     "images": [
@@ -1762,37 +1471,28 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Thread",
-        "value": "Internal Brass Female Thread"
-      },
-      {
-        "label": "Body",
-        "value": "Hex Exterior for Wrench Grip"
-      },
-      {
-        "label": "Sizes",
-        "value": "3/4x1/2, 1x1/2, 1x1"
+        "label": "Connection",
+        "value": "Tank Wall Mount Socket"
       }
     ]
   },
   {
     "id": "gtc043",
     "code": "GTC043",
-    "name": "CPVC 3-Way TEE with Brass Thread (Cream)",
-    "category": "Brass Threaded Fittings",
-    "description": "CPVC 3-way branching TEE with heavy brass female central insert. Perfect for hot water diverter and shower mixer line setups.",
+    "name": "Tank Nipple – Threaded (3/4\", 1\")",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 3/4×3/4 – 50 pcs; 1×1 – 50 pcs. Threaded tank nipple.",
     "unit": "Piece",
-    "badge": "BRASS TEE",
+    "badge": "TANK CONNECTOR",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "3/4\u00d71/2\"",
-      "1\u00d71/2\"",
-      "1\u00d71\""
+      "3/4×3/4",
+      "1×1"
     ],
     "packetSizes": [
-      "50 Pcs Pkt (3/4\")",
-      "25 Pcs Pkt (1\")"
+      "50 pcs (3/4×3/4)",
+      "50 pcs (1×1)"
     ],
     "image": "/images/products/gtc043.jpg",
     "images": [
@@ -1800,54 +1500,8 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Center Branch",
-        "value": "Solid Brass Female Thread"
-      },
-      {
-        "label": "Material",
-        "value": "CPVC High Temperature Compound"
-      },
-      {
-        "label": "Sizes",
-        "value": "3/4x1/2, 1x1/2, 1x1"
-      }
-    ]
-  },
-  {
-    "id": "gtc044",
-    "code": "GTC044",
-    "name": "CPVC Overhead Tank Nipple Socket (Cream)",
-    "category": "CPVC Fittings",
-    "description": "Heavy duty CPVC water tank connector fitting with silicone gasket and locking nut for solar tank and rooftop storage connections.",
-    "unit": "Piece",
-    "badge": "HEAVY TANK",
-    "deal": false,
-    "dealLabel": "",
-    "sizes": [
-      "3/4\u00d73/4\"",
-      "1\u00d71\"",
-      "1\u00bc\u00d71\u00bc\""
-    ],
-    "packetSizes": [
-      "50 Pcs Pkt (3/4\", 1\")",
-      "25 Pcs Pkt (1\u00bc\")"
-    ],
-    "image": "/images/products/gtc044.jpg",
-    "images": [
-      "/images/products/gtc044.jpg"
-    ],
-    "specifications": [
-      {
         "label": "Connection",
-        "value": "Tank Wall Mount with Gasket"
-      },
-      {
-        "label": "Material",
-        "value": "Heavy Duty CPVC Compound"
-      },
-      {
-        "label": "Sizes",
-        "value": "3/4x3/4, 1x1, 1\u00bcx1\u00bc"
+        "value": "Threaded Tank Nipple"
       }
     ]
   }

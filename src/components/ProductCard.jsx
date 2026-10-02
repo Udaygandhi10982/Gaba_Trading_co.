@@ -9,14 +9,17 @@ export default function ProductCard({ product }) {
   const [qty, setQty] = useState(1);
   const [added, setAdded] = useState(false);
   
-  // Default to first packet size if available
+  // Default size & packet options
+  const sizeOptions = product.sizes && product.sizes.length > 0 ? product.sizes : [];
+  const [selectedSize, setSelectedSize] = useState(sizeOptions[0] || null);
+
   const packetOptions = product.packetSizes && product.packetSizes.length > 0 
     ? product.packetSizes 
     : [product.unit || 'Standard Pack'];
   const [selectedPacket, setSelectedPacket] = useState(packetOptions[0]);
 
   const handleAdd = () => {
-    addItem(product, qty, selectedPacket);
+    addItem(product, qty, selectedPacket, selectedSize);
     setAdded(true);
     setQty(1);
     setTimeout(() => setAdded(false), 1500);
@@ -96,37 +99,82 @@ export default function ProductCard({ product }) {
           </p>
         </div>
 
-        {/* Interactive Packet Size Selection Chips (Like T-Shirt Sizes S/M/L) */}
-        {packetOptions.length > 0 && (
-          <div className="mb-3 pt-2 border-t border-gray-100">
-            <div className="flex items-center gap-1 mb-1.5">
-              <Package size={11} className="text-gray-400" />
-              <span className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">
-                Select Packet / Packing:
-              </span>
-            </div>
-            <div className="flex flex-wrap gap-1.5">
-              {packetOptions.map((pkt) => {
-                const isSelected = selectedPacket === pkt;
-                return (
-                  <button
-                    key={pkt}
-                    type="button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setSelectedPacket(pkt);
-                    }}
-                    className={`text-[11px] font-bold px-2 py-1 rounded-md border transition-all cursor-pointer ${
-                      isSelected
-                        ? 'bg-[#071421] text-[#FF7A00] border-[#071421] shadow-sm scale-100'
-                        : 'bg-gray-50 text-gray-700 border-gray-200 hover:border-gray-400 hover:bg-white'
-                    }`}
-                  >
-                    {pkt}
-                  </button>
-                );
-              })}
-            </div>
+        {/* Interactive Size & Packaging Selection Chips (Amazon / Flipkart Style S/M/L Options) */}
+        {(sizeOptions.length > 0 || packetOptions.length > 0) && (
+          <div className="mb-3 pt-2 border-t border-gray-100 flex flex-col gap-2">
+            
+            {/* Size Options */}
+            {sizeOptions.length > 0 && (
+              <div>
+                <div className="flex items-center gap-1 mb-1">
+                  <span className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">
+                    Size:
+                  </span>
+                  {selectedSize && (
+                    <span className="text-[10px] font-extrabold text-[#071421] truncate">{selectedSize}</span>
+                  )}
+                </div>
+                <div className="flex flex-wrap gap-1">
+                  {sizeOptions.map((sz) => {
+                    const isSelected = selectedSize === sz;
+                    return (
+                      <button
+                        key={sz}
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedSize(sz);
+                        }}
+                        className={`text-[10px] font-bold px-2 py-0.5 rounded border transition-all cursor-pointer ${
+                          isSelected
+                            ? 'bg-[#071421] text-[#FF7A00] border-[#071421] shadow-sm'
+                            : 'bg-gray-50 text-gray-700 border-gray-200 hover:border-gray-400 hover:bg-white'
+                        }`}
+                      >
+                        {sz}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Packaging Options */}
+            {packetOptions.length > 0 && (
+              <div>
+                <div className="flex items-center gap-1 mb-1">
+                  <Package size={10} className="text-gray-400" />
+                  <span className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">
+                    Packing:
+                  </span>
+                  {selectedPacket && (
+                    <span className="text-[10px] font-extrabold text-[#071421] truncate">{selectedPacket}</span>
+                  )}
+                </div>
+                <div className="flex flex-wrap gap-1">
+                  {packetOptions.map((pkt) => {
+                    const isSelected = selectedPacket === pkt;
+                    return (
+                      <button
+                        key={pkt}
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedPacket(pkt);
+                        }}
+                        className={`text-[10px] font-bold px-2 py-0.5 rounded border transition-all cursor-pointer ${
+                          isSelected
+                            ? 'bg-[#FF7A00] text-white border-[#FF7A00] shadow-sm'
+                            : 'bg-gray-50 text-gray-700 border-gray-200 hover:border-gray-400 hover:bg-white'
+                        }`}
+                      >
+                        {pkt}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
           </div>
         )}
 

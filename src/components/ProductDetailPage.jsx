@@ -20,6 +20,61 @@ import { products, getProductSlug } from '../data/products';
 import { navigate } from '../utils/navigation';
 
 export default function ProductDetailPage({ product, setSelectedCategory }) {
+  const { addItem } = useCart();
+
+  // Image states
+  const productImages = product && product.images && product.images.length > 0
+    ? product.images
+    : product ? [product.image] : [];
+  const [activeImgIndex, setActiveImgIndex] = useState(0);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [lightboxImgIndex, setLightboxImgIndex] = useState(0);
+
+  // Size & Packet Options
+  const sizeOptions = product && product.sizes && product.sizes.length > 0 ? product.sizes : [];
+  const [selectedSize, setSelectedSize] = useState(sizeOptions[0] || null);
+
+  const packetOptions = product && product.packetSizes && product.packetSizes.length > 0
+    ? product.packetSizes
+    : [product?.unit || 'Standard Pack'];
+  const [selectedPacket, setSelectedPacket] = useState(packetOptions[0]);
+  const [qty, setQty] = useState(1);
+  const [added, setAdded] = useState(false);
+
+  // Tab state
+  const [activeTab, setActiveTab] = useState('description');
+
+  // Related products (same category, excluding current)
+  const related = product
+    ? products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 6)
+    : [];
+
+  // Reset states when product changes
+  useEffect(() => {
+    if (!product) return;
+    setActiveImgIndex(0);
+    const initialSizes = product.sizes && product.sizes.length > 0 ? product.sizes : [];
+    setSelectedSize(initialSizes[0] || null);
+
+    const initialPackets = product.packetSizes && product.packetSizes.length > 0
+      ? product.packetSizes
+      : [product.unit || 'Standard Pack'];
+    setSelectedPacket(initialPackets[0]);
+    setQty(1);
+    setAdded(false);
+    setActiveTab('description');
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [product]);
+
+  // Escape key closes lightbox
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setIsLightboxOpen(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   if (!product) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-20 text-center select-none">
@@ -40,59 +95,11 @@ export default function ProductDetailPage({ product, setSelectedCategory }) {
     );
   }
 
-  const { addItem } = useCart();
-
-  // Image states
-  const productImages = product.images && product.images.length > 0
-    ? product.images
-    : [product.image];
-  const [activeImgIndex, setActiveImgIndex] = useState(0);
-  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
-  const [lightboxImgIndex, setLightboxImgIndex] = useState(0);
-
-  // Packet & Purchase states
-  const packetOptions = product.packetSizes && product.packetSizes.length > 0
-    ? product.packetSizes
-    : [product.unit || 'Standard Pack'];
-  const [selectedPacket, setSelectedPacket] = useState(packetOptions[0]);
-  const [qty, setQty] = useState(1);
-  const [added, setAdded] = useState(false);
-
-  // Tab state
-  const [activeTab, setActiveTab] = useState('description');
-
-  // Related products (same category, excluding current)
-  const related = products
-    .filter(p => p.category === product.category && p.id !== product.id)
-    .slice(0, 6);
-
-  // Reset states when product changes
-  useEffect(() => {
-    setActiveImgIndex(0);
-    const initialPackets = product.packetSizes && product.packetSizes.length > 0
-      ? product.packetSizes
-      : [product.unit || 'Standard Pack'];
-    setSelectedPacket(initialPackets[0]);
-    setQty(1);
-    setAdded(false);
-    setActiveTab('description');
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, [product]);
-
-  // Escape key closes lightbox
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === 'Escape') setIsLightboxOpen(false);
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
   const decQty = () => setQty(q => Math.max(1, q - 1));
   const incQty = () => setQty(q => q + 1);
 
   const handleAddToCart = () => {
-    addItem(product, qty, selectedPacket);
+    addItem(product, qty, selectedPacket, selectedSize);
     setAdded(true);
     setTimeout(() => setAdded(false), 1500);
   };
@@ -104,7 +111,7 @@ I would like to enquire about / order the following item:
 
 • Product: ${product.name}
 • Item Code: ${product.code || 'N/A'}
-• Category: ${product.category}
+• Category: ${product.category}${selectedSize ? `\n• Selected Size: ${selectedSize}` : ''}
 • Selected Packing: ${selectedPacket}
 • Required Quantity: ${qty}
 
@@ -245,39 +252,82 @@ Thank you.`;
                 {product.description}
               </p>
 
-              {/* ── Packaging Options ── */}
-              {packetOptions.length > 0 && (
-                <div className="mb-4">
-                  <div className="flex items-center gap-1.5 mb-2">
-                    <Package size={13} className="text-[#FF7A00]" />
-                    <span className="text-[11px] font-black text-[#071421] uppercase tracking-wider">
-                      Select Packet Size:
-                    </span>
+              {/* ── Amazon/Flipkart Style Interactive Options (Size & Packaging) ── */}
+              <div className="mb-5 space-y-4">
+                
+                {/* Size Selector */}
+                {sizeOptions.length > 0 && (
+                  <div>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-[11px] font-black text-[#071421] uppercase tracking-wider flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-[#071421]"></span>
+                        Select Size:
+                      </span>
+                      {selectedSize && (
+                        <span className="text-[11px] font-bold text-[#FF7A00]">
+                          Selected: {selectedSize}
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {sizeOptions.map((sz) => {
+                        const isSelected = selectedSize === sz;
+                        return (
+                          <button
+                            key={sz}
+                            type="button"
+                            onClick={() => setSelectedSize(sz)}
+                            className={`text-[12px] font-extrabold px-3.5 py-2 rounded-xl border-2 transition-all cursor-pointer ${
+                              isSelected
+                                ? 'bg-[#071421] text-[#FF7A00] border-[#071421] shadow-md ring-2 ring-[#FF7A00]/20'
+                                : 'bg-white text-gray-700 border-gray-200 hover:border-gray-400 hover:bg-gray-50'
+                            }`}
+                          >
+                            {sz}
+                          </button>
+                        );
+                      })}
+                    </div>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {packetOptions.map((pkt) => {
-                      const isSelected = selectedPacket === pkt;
-                      return (
-                        <button
-                          key={pkt}
-                          type="button"
-                          onClick={() => setSelectedPacket(pkt)}
-                          className={`text-[12px] font-bold px-3 py-1.5 rounded-lg border-2 transition-all cursor-pointer ${
-                            isSelected
-                              ? 'bg-[#FF7A00] text-white border-[#FF7A00] shadow-sm'
-                              : 'bg-white text-gray-600 border-gray-200 hover:border-gray-400'
-                          }`}
-                        >
-                          {pkt}
-                        </button>
-                      );
-                    })}
+                )}
+
+                {/* Packet / Packaging Selector */}
+                {packetOptions.length > 0 && (
+                  <div>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-[11px] font-black text-[#071421] uppercase tracking-wider flex items-center gap-1.5">
+                        <Package size={13} className="text-[#FF7A00]" />
+                        Select Package / Packing:
+                      </span>
+                      {selectedPacket && (
+                        <span className="text-[11px] font-bold text-gray-700">
+                          Selected: {selectedPacket}
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {packetOptions.map((pkt) => {
+                        const isSelected = selectedPacket === pkt;
+                        return (
+                          <button
+                            key={pkt}
+                            type="button"
+                            onClick={() => setSelectedPacket(pkt)}
+                            className={`text-[12px] font-extrabold px-3.5 py-2 rounded-xl border-2 transition-all cursor-pointer ${
+                              isSelected
+                                ? 'bg-[#FF7A00] text-white border-[#FF7A00] shadow-md ring-2 ring-[#FF7A00]/20'
+                                : 'bg-white text-gray-700 border-gray-200 hover:border-gray-400 hover:bg-gray-50'
+                            }`}
+                          >
+                            {pkt}
+                          </button>
+                        );
+                      })}
+                    </div>
                   </div>
-                  <p className="text-[10px] text-gray-400 font-medium mt-1.5">
-                    Selected: <strong className="text-[#071421]">{selectedPacket}</strong>
-                  </p>
-                </div>
-              )}
+                )}
+
+              </div>
 
               {/* ── Quantity Selector ── */}
               <div className="flex items-center gap-4 mb-4">
