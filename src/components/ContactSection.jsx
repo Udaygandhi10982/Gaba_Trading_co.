@@ -1,5 +1,29 @@
-import { MapPin, Phone, MessageCircle, Mail, Clock, ExternalLink } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, Mail, Clock, ExternalLink, Navigation } from 'lucide-react';
 import { BUSINESS_WHATSAPP_NUMBER } from '../utils/whatsapp';
+
+// Shop exact coordinates
+const SHOP_LAT = 30.9315757;
+const SHOP_LNG = 75.8634837;
+
+function openDirections() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const { latitude, longitude } = pos.coords;
+        const url = `https://www.google.com/maps/dir/${latitude},${longitude}/${SHOP_LAT},${SHOP_LNG}`;
+        window.open(url, '_blank', 'noopener,noreferrer');
+      },
+      () => {
+        // If user denies location, still open directions to the shop
+        const url = `https://www.google.com/maps/dir/?api=1&destination=${SHOP_LAT},${SHOP_LNG}`;
+        window.open(url, '_blank', 'noopener,noreferrer');
+      }
+    );
+  } else {
+    const url = `https://www.google.com/maps/dir/?api=1&destination=${SHOP_LAT},${SHOP_LNG}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
+}
 
 const contactItems = [
   {
@@ -80,14 +104,12 @@ export default function ContactSection() {
 
             {/* CTA Buttons */}
             <div className="flex gap-3 pt-2">
-              <a
-                href="https://www.google.com/maps/dir/?api=1&destination=GABA+Sanitary+Specialist,+Main+Road+Kabir+Nagar,+Basti+Jodhewal,+Ludhiana,+Punjab+141007"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-[#071421] text-[#071421] font-bold text-sm hover:bg-[#071421] hover:text-white transition-all duration-200"
+              <button
+                onClick={openDirections}
+                className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-[#071421] text-[#071421] font-bold text-sm hover:bg-[#071421] hover:text-white transition-all duration-200 cursor-pointer"
               >
-                <ExternalLink size={16} /> Get Directions
-              </a>
+                <Navigation size={16} /> Get Directions
+              </button>
               <a
                 href={`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}`}
                 target="_blank"
@@ -111,14 +133,12 @@ export default function ContactSection() {
               <MapPin size={40} className="text-[#F59E0B] mb-2" />
               <p className="text-white font-bold">GABA Trading Company</p>
               <p className="text-white/80 text-sm text-center px-4">Kabir Nagar, Basti Jodhewal, Ludhiana – 141007</p>
-              <a
-                href="https://www.google.com/maps/place/Gaba+Trading+Co./@30.9315757,75.8609088,17z/data=!3m1!4b1!4m6!3m5!1s0x391a8342a8d7346d:0xa3bdf0f8d4da25a6!8m2!3d30.9315757!4d75.8634837!16s%2Fg%2F11zfhmh80l?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 bg-[#F59E0B] text-[#071421] font-bold px-5 py-2 rounded-lg text-sm hover:bg-[#FFB21A] transition-colors"
+              <button
+                onClick={openDirections}
+                className="mt-4 bg-[#F59E0B] text-[#071421] font-bold px-5 py-2 rounded-lg text-sm hover:bg-[#FFB21A] transition-colors cursor-pointer flex items-center gap-1.5"
               >
-                Open in Maps
-              </a>
+                <Navigation size={14} /> Get Directions
+              </button>
             </div>
           </div>
         </div>
