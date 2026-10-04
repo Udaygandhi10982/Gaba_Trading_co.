@@ -91,7 +91,7 @@ export default function AboutSection() {
             <span className="text-[#F59E0B]">You Can Rely On</span>
           </h2>
           <p className="text-[#6B7280] text-sm leading-relaxed mb-8 max-w-lg">
-            GABA Sanitary Specialist is your trusted destination for quality bathroom fittings and sanitary products. We bring together modern designs, reliable products, and attractive prices for every bathroom.
+            GABA Trading Company is your trusted destination for quality bathroom fittings and sanitary products. We bring together modern designs, reliable products, and attractive prices for every bathroom.
           </p>
 
           {/* 4 Icon Highlights */}

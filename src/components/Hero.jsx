@@ -110,7 +110,7 @@ export default function Hero() {
           <h1 className="text-white font-black leading-tight mb-3 select-none">
             <span className="block text-4xl sm:text-6xl md:text-7xl tracking-tight">GABA</span>
             <span className="block text-lg sm:text-2xl md:text-3xl text-[#F59E0B] tracking-wide mt-0.5 uppercase">
-              SANITARY SPECIALIST
+              TRADING COMPANY
             </span>
           </h1>
 

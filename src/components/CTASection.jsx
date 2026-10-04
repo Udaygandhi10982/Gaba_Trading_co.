@@ -42,7 +42,7 @@ export default function CTASection() {
             <div className="shrink-0">
               <a
                 id="cta-whatsapp-chat-btn"
-                href={`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${encodeURIComponent('Hello GABA Sanitary Specialist, I would like to enquire about sanitary products.')}`}
+                href={`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${encodeURIComponent('Hello GABA Trading Company, I would like to enquire about sanitary products.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#071421] text-white hover:bg-[#112538] active:scale-95 transition-all duration-150 font-bold py-3 px-5 rounded-xl flex items-center justify-between gap-3 text-xs md:text-sm shadow-xl shadow-black/20 group cursor-pointer"

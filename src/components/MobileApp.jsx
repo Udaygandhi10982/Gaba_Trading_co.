@@ -122,7 +122,7 @@ Please share the current price and availability.`;
   // Checkout order template
   const triggerCartWhatsApp = () => {
     if (cartItems.length === 0) return;
-    let message = `Hello GABA Sanitary Specialist,
+    let message = `Hello GABA Trading Company,
 
 I would like to place an order for the following items:
 
@@ -464,7 +464,7 @@ Thank you.`;
                   <div className="relative z-10 px-6 pt-24 pb-8 flex-1 flex flex-col justify-end text-left pointer-events-none">
                     <h1 className="text-white font-black leading-none mb-3">
                       <span className="block text-5xl tracking-tight leading-none">GABA</span>
-                      <span className="block text-xl text-[#F59E0B] tracking-wide mt-1.5 uppercase font-bold">SANITARY SPECIALIST</span>
+                      <span className="block text-xl text-[#F59E0B] tracking-wide mt-1.5 uppercase font-bold">TRADING COMPANY</span>
                     </h1>
                     
                     <p className="text-white font-bold text-lg leading-tight mb-1.5">
@@ -670,7 +670,7 @@ Thank you.`;
                   <p className="text-lg font-black leading-tight mb-1 relative z-10">Upgrade Your Bathroom Today!</p>
                   <p className="text-xs text-white/90 mb-4 max-w-xs relative z-10">Premium sanitary products at special prices. Chat with us on WhatsApp.</p>
                   <a
-                    href={`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${encodeURIComponent('Hello GABA Sanitary Specialist, I would like to enquire about sanitary products.')}`}
+                    href={`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${encodeURIComponent('Hello GABA Trading Company, I would like to enquire about sanitary products.')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#071421] text-white hover:bg-[#112538] font-bold text-xs py-2 px-5 rounded-lg flex items-center gap-2 shadow-md relative z-10"
@@ -706,7 +706,7 @@ Thank you.`;
 
                 {/* FOOTER */}
                 <footer className="bg-[#071421] text-white/40 py-6 px-4 text-center border-t border-white/5">
-                  <p className="text-[10px]">© 2026 GABA Sanitary Specialist. All Rights Reserved.</p>
+                  <p className="text-[10px]">© 2026 GABA Trading Company. All Rights Reserved.</p>
                 </footer>
               </div>
             )}

@@ -109,7 +109,7 @@ export default function ContactSection() {
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#071421]/50">
               <MapPin size={40} className="text-[#F59E0B] mb-2" />
-              <p className="text-white font-bold">GABA Sanitary Specialist</p>
+              <p className="text-white font-bold">GABA Trading Company</p>
               <p className="text-white/80 text-sm text-center px-4">Kabir Nagar, Basti Jodhewal, Ludhiana – 141007</p>
               <a
                 href="https://www.google.com/maps/place/Gaba+Trading+Co./@30.9315757,75.8609088,17z/data=!3m1!4b1!4m6!3m5!1s0x391a8342a8d7346d:0xa3bdf0f8d4da25a6!8m2!3d30.9315757!4d75.8634837!16s%2Fg%2F11zfhmh80l?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"

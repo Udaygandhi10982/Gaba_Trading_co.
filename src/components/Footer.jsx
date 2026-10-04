@@ -38,7 +38,7 @@ export default function Footer() {
               <div>
                 <p className="font-black text-xl leading-tight tracking-tight">GABA</p>
                 <p className="text-[#F59E0B] text-[10px] font-bold tracking-widest uppercase">
-                  Sanitary Specialist
+                  Trading Company
                 </p>
               </div>
             </div>
