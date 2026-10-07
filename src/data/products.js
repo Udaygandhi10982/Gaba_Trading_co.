@@ -594,12 +594,13 @@ export const products = [
     "code": "GTC016",
     "name": "Shower – Amaze",
     "category": "Showers",
-    "description": "Sizes: 6 and 8 inch; Material: Stainless steel. Square-pattern SS shower.",
+    "description": "Sizes: 4, 6 and 8 inch; Material: Stainless steel. Square-pattern SS shower.",
     "unit": "Piece",
     "badge": "DESIGNER",
     "deal": false,
     "dealLabel": "",
     "sizes": [
+      "4 Inch",
       "6 Inch",
       "8 Inch"
     ],
@@ -621,7 +622,7 @@ export const products = [
       },
       {
         "label": "Available Sizes",
-        "value": "6\", 8\" Square"
+        "value": "4\", 6\", 8\" Square"
       }
     ]
   },
@@ -630,13 +631,14 @@ export const products = [
     "code": "GTC017",
     "name": "Health Faucet",
     "category": "Health & Jet Sprays",
-    "description": "Tube: 1 meter; Material: Grade 304 SS; Heavy duty; Made with ABS. Handheld health faucet with hose.",
+    "description": "Material: Grade 304 SS; Heavy duty; Made with ABS. Handheld health faucet.",
     "unit": "Set",
     "badge": "COMPLETE SET",
     "deal": true,
     "dealLabel": "TOP SELLER",
     "sizes": [
-      "1.0 Meter Hose"
+      "1 Mtr",
+      "1.5 Mtr"
     ],
     "packetSizes": [
       "1 Pc",
@@ -656,8 +658,8 @@ export const products = [
         "value": "ABS Chrome"
       },
       {
-        "label": "Tube",
-        "value": "1 Meter Grade 304 SS"
+        "label": "Hose Length",
+        "value": "1 Mtr, 1.5 Mtr Grade 304 SS"
       }
     ]
   },
@@ -804,7 +806,7 @@ export const products = [
     "id": "gtc022",
     "code": "GTC022",
     "name": "Elbow Brass",
-    "category": "Brass Threaded Fittings",
+    "category": "uPVC Fittings",
     "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 25 pcs; 1×1/2 – 50 pcs. White elbow with brass insert.",
     "unit": "Piece",
     "badge": "BRASS INSERT",
@@ -835,7 +837,7 @@ export const products = [
     "id": "gtc023",
     "code": "GTC023",
     "name": "MTA Brass",
-    "category": "Brass Threaded Fittings",
+    "category": "uPVC Fittings",
     "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 50 pcs; 1×1/2 – 50 pcs. White fitting with external brass thread.",
     "unit": "Piece",
     "badge": "BRASS MTA",
@@ -863,42 +865,11 @@ export const products = [
     ]
   },
   {
-    "id": "gtc024",
-    "code": "GTC024",
-    "name": "TEE Brass",
-    "category": "Brass Threaded Fittings",
-    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 25 pcs; 1×1/2 – 25 pcs. T fitting with brass threaded insert.",
-    "unit": "Piece",
-    "badge": "BRASS TEE",
-    "deal": false,
-    "dealLabel": "",
-    "sizes": [
-      "1/2×1/2",
-      "1×1",
-      "1×1/2"
-    ],
-    "packetSizes": [
-      "50 pcs (1/2×1/2)",
-      "25 pcs (1×1)",
-      "25 pcs (1×1/2)"
-    ],
-    "image": "/images/products/gtc024.jpg",
-    "images": [
-      "/images/products/gtc024.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Center Branch",
-        "value": "Brass Female Threaded Port"
-      }
-    ]
-  },
-  {
     "id": "gtc025",
     "code": "GTC025",
-    "name": "Tank Nipple – Threaded",
+    "name": "TEE Brass",
     "category": "uPVC Fittings",
-    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 50 pcs; 1½×1½ – 25 pcs. Threaded tank nipple.",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 25 pcs; 1×1/2 – 25 pcs. T fitting with brass threaded insert.",
     "unit": "Piece",
     "badge": "TANK CONNECTOR",
     "deal": false,
@@ -906,7 +877,7 @@ export const products = [
     "sizes": [
       "1/2×1/2",
       "1×1",
-      "1½×1½"
+      "1×1/2"
     ],
     "packetSizes": [
       "50 pcs (1/2×1/2)",
@@ -920,17 +891,17 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Structure",
-        "value": "Double Threaded Barrel with Nut"
+        "label": "Center Branch",
+        "value": "Brass Female Threaded Port"
       }
     ]
   },
   {
     "id": "gtc026",
     "code": "GTC026",
-    "name": "Tank Nipple Socket",
+    "name": "Tank Nipple Threaded",
     "category": "uPVC Fittings",
-    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 50 pcs; 1½×1½ – 25 pcs. Tank socket with threaded section.",
+    "description": "Premium uPVC double-threaded tank nipple complete with threaded barrel, heavy-duty locking nut, and rubber washer for leak-proof water tank connections.",
     "unit": "Piece",
     "badge": "TANK OUTLET",
     "deal": false,
@@ -941,9 +912,9 @@ export const products = [
       "1½×1½"
     ],
     "packetSizes": [
-      "50 pcs (1/2×1/2)",
-      "50 pcs (1×1)",
-      "25 pcs (1½×1½)"
+      "50 pcs packet (1/2×1/2)",
+      "50 pcs packet (1×1)",
+      "25 pcs packet (1½×1½)"
     ],
     "image": "/images/products/gtc026.jpg",
     "images": [
@@ -951,25 +922,29 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Connection",
-        "value": "Tank Mount to Socket Weld"
+        "label": "Material",
+        "value": "100% Virgin uPVC"
+      },
+      {
+        "label": "Connection Type",
+        "value": "Double Threaded Male Barrel with Lock Nut"
       }
     ]
   },
   {
     "id": "gtc027",
     "code": "GTC027",
-    "name": "End Cap",
+    "name": "Tank Nipple Socket",
     "category": "uPVC Fittings",
-    "description": "Sizes: 1/2 inch – 100 pcs; 1 inch – 50 pcs; 1½ inch – 25 pcs. White cylindrical end cap.",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 50 pcs; 1½×1½ – 25 pcs. Tank socket with threaded section.",
     "unit": "Piece",
     "badge": "TERMINATOR",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "1/2 Inch",
-      "1 Inch",
-      "1½ Inch"
+      "1/2×1/2",
+      "1×1",
+      "1½×1½"
     ],
     "packetSizes": [
       "100 pcs (1/2\")",
@@ -982,24 +957,25 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Type",
-        "value": "Solvent Weld End Cap"
+        "label": "Connection",
+        "value": "Tank Mount to Socket Weld"
       }
     ]
   },
   {
     "id": "gtc028",
     "code": "GTC028",
-    "name": "45° Elbow",
+    "name": "End Cap",
     "category": "uPVC Fittings",
-    "description": "Sizes: 1/2×1/2 – 100 pcs; 1×1 – 50 pcs. 45-degree elbow.",
+    "description": "Sizes: 1/2 inch – 100 pcs; 1 inch – 50 pcs; 1½ inch – 25 pcs. White cylindrical end cap.",
     "unit": "Piece",
     "badge": "SMOOTH BEND",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "1/2×1/2",
-      "1×1"
+      "1/2 Inch",
+      "1 Inch",
+      "1½ Inch"
     ],
     "packetSizes": [
       "100 pcs (1/2×1/2)",
@@ -1011,17 +987,17 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Angle",
-        "value": "45 Degree Sweep"
+        "label": "Type",
+        "value": "Solvent Weld End Cap"
       }
     ]
   },
   {
     "id": "gtc029",
     "code": "GTC029",
-    "name": "Cross Tee",
+    "name": "45° Elbow",
     "category": "uPVC Fittings",
-    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 25 pcs. Four-way cross fitting.",
+    "description": "Sizes: 1/2×1/2 – 100 pcs; 1×1 – 50 pcs. 45-degree elbow.",
     "unit": "Piece",
     "badge": "4-WAY CROSS",
     "deal": false,
@@ -1040,25 +1016,24 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Type",
-        "value": "4-Way Cross Tee"
+        "label": "Angle",
+        "value": "45 Degree Sweep"
       }
     ]
   },
   {
     "id": "gtc030",
     "code": "GTC030",
-    "name": "Ball Valve – Long Handle",
-    "category": "Valves & Spindles",
-    "description": "Sizes: 1/2 inch – 24 pcs; 1 inch – 10 pcs; 1½ inch – 5 pcs. White valve with blue long handle.",
+    "name": "Cross Tee",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 1/2×1/2 – 50 pcs; 1×1 – 25 pcs. Four-way cross fitting.",
     "unit": "Piece",
     "badge": "FULL FLOW",
     "deal": true,
     "dealLabel": "ESSENTIAL",
     "sizes": [
-      "1/2 Inch",
-      "1 Inch",
-      "1½ Inch"
+      "1/2×1/2",
+      "1×1"
     ],
     "packetSizes": [
       "24 pcs (1/2\")",
@@ -1071,24 +1046,25 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Handle",
-        "value": "Blue Long Lever"
+        "label": "Type",
+        "value": "4-Way Cross Tee"
       }
     ]
   },
   {
     "id": "gtc031",
     "code": "GTC031",
-    "name": "Step Over Bend",
+    "name": "Ball Valve – Long Handle",
     "category": "uPVC Fittings",
-    "description": "Sizes: 1/2×1/2 – 25 pcs; 1×1 – 20 pcs. Curved step-over pipe fitting.",
+    "description": "Sizes: 1/2 inch – 24 pcs; 1 inch – 10 pcs; 1½ inch – 5 pcs. White valve with blue long handle.",
     "unit": "Piece",
     "badge": "CROSSOVER",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "1/2×1/2",
-      "1×1"
+      "1/2 Inch",
+      "1 Inch",
+      "1½ Inch"
     ],
     "packetSizes": [
       "25 pcs (1/2×1/2)",
@@ -1100,34 +1076,28 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Profile",
-        "value": "S-Curve Crossover Bridge"
+        "label": "Handle",
+        "value": "Blue Long Lever"
       }
     ]
   },
   {
     "id": "gtc032",
     "code": "GTC032",
-    "name": "uPVC Pipe – ASTM D-1785 3 Meter",
-    "category": "Pipes & Hoses",
-    "description": "3 Meter; SCH-40 & SCH-80; 1/2 inch, 1 inch, 1½ inch. ASTM D-1785 uPVC pressure pipes.",
+    "name": "Step Over Bend",
+    "category": "uPVC Fittings",
+    "description": "Sizes: 1/2×1/2 – 25 pcs; 1×1 – 20 pcs. Curved step-over pipe fitting.",
     "unit": "Length",
     "badge": "ASTM D-1785",
     "deal": true,
     "dealLabel": "3 METER",
     "sizes": [
-      "1/2\" SCH-40",
-      "1\" SCH-40",
-      "1½\" SCH-40",
-      "1/2\" SCH-80",
-      "1\" SCH-80",
-      "1½\" SCH-80"
+      "1/2×1/2",
+      "1×1"
     ],
     "packetSizes": [
-      "50 pcs/bundle (1/2\")",
-      "30 pcs/bundle (1\")",
-      "25 pcs/bundle (1\")",
-      "15 pcs/bundle (1½\")"
+      "25 pcs/pkt (1/2\")",
+      "20 pcs/pkt (1\")"
     ],
     "image": "/images/products/gtc032.jpg",
     "images": [
@@ -1135,25 +1105,17 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Standard",
-        "value": "ASTM D-1785 Standard"
-      },
-      {
-        "label": "Schedules",
-        "value": "SCH-40 & SCH-80"
-      },
-      {
-        "label": "Length",
-        "value": "3 Meter"
+        "label": "Profile",
+        "value": "S-Curve Crossover Bridge"
       }
     ]
   },
   {
     "id": "gtc033",
     "code": "GTC033",
-    "name": "uPVC Pipe – ASTM D-1785 6 Meter",
+    "name": "uPVC Pipe – ASTM D-1785 3 Meter",
     "category": "Pipes & Hoses",
-    "description": "6 Meter; SCH-40 & SCH-80; 1/2 inch, 1 inch, 1½ inch. ASTM D-1785 uPVC pressure pipes.",
+    "description": "3 Meter; SCH-40 & SCH-80; 1/2 inch, 1 inch, 1½ inch. ASTM D-1785 uPVC pressure pipes.",
     "unit": "Length",
     "badge": "ASTM D-1785",
     "deal": true,
@@ -1172,9 +1134,9 @@ export const products = [
       "10 pcs/bundle (1½\")",
       "8 pcs/bundle (1½\")"
     ],
-    "image": "/images/products/gtc033.jpg",
+    "image": "/images/products/gtc034.jpg",
     "images": [
-      "/images/products/gtc033.jpg"
+      "/images/products/gtc034.jpg"
     ],
     "specifications": [
       {
@@ -1187,49 +1149,16 @@ export const products = [
       },
       {
         "label": "Length",
-        "value": "6 Meter"
-      }
-    ]
-  },
-  {
-    "id": "gtc034",
-    "code": "GTC034",
-    "name": "Elbow Plain (3/4\", 1\", 1¼\")",
-    "category": "uPVC Fittings",
-    "description": "Sizes: 3/4×3/4 – 100 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs; 1×3/4 – 50 pcs. Plain elbow.",
-    "unit": "Piece",
-    "badge": "PLUMBING CORE",
-    "deal": false,
-    "dealLabel": "",
-    "sizes": [
-      "3/4×3/4",
-      "1×1",
-      "1¼×1¼",
-      "1×3/4"
-    ],
-    "packetSizes": [
-      "100 pcs (3/4×3/4)",
-      "50 pcs (1×1)",
-      "25 pcs (1¼×1¼)",
-      "50 pcs (1×3/4)"
-    ],
-    "image": "/images/products/gtc034.jpg",
-    "images": [
-      "/images/products/gtc034.jpg"
-    ],
-    "specifications": [
-      {
-        "label": "Type",
-        "value": "Plain uPVC 90° Elbow"
+        "value": "3 Meter"
       }
     ]
   },
   {
     "id": "gtc035",
     "code": "GTC035",
-    "name": "TEE Plain (3/4\", 1\", 1¼\")",
-    "category": "uPVC Fittings",
-    "description": "Sizes: 3/4×3/4 – 100 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs; 1×3/4 – 50 pcs. Plain T fitting.",
+    "name": "Elbow Plain (3/4\", 1\", 1¼\")",
+    "category": "CPVC Fittings",
+    "description": "Sizes: 3/4×3/4 – 100 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs; 1×3/4 – 50 pcs. Plain elbow.",
     "unit": "Piece",
     "badge": "PLUMBING CORE",
     "deal": false,
@@ -1253,16 +1182,16 @@ export const products = [
     "specifications": [
       {
         "label": "Type",
-        "value": "Plain uPVC TEE"
+        "value": "Plain uPVC 90° Elbow"
       }
     ]
   },
   {
     "id": "gtc036",
     "code": "GTC036",
-    "name": "Coupler (3/4\", 1\", 1¼\")",
-    "category": "uPVC Fittings",
-    "description": "Sizes: 3/4×3/4 – 100 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs; 1×3/4 – 100 pcs. Plain cylindrical coupler.",
+    "name": "TEE Plain (3/4\", 1\", 1¼\")",
+    "category": "CPVC Fittings",
+    "description": "Sizes: 3/4×3/4 – 100 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs; 1×3/4 – 50 pcs. Plain T fitting.",
     "unit": "Piece",
     "badge": "ESSENTIAL",
     "deal": false,
@@ -1286,16 +1215,16 @@ export const products = [
     "specifications": [
       {
         "label": "Type",
-        "value": "Coupler Socket"
+        "value": "Plain uPVC TEE"
       }
     ]
   },
   {
     "id": "gtc037",
     "code": "GTC037",
-    "name": "Union (3/4\", 1\", 1¼\")",
-    "category": "uPVC Fittings",
-    "description": "Sizes: 3/4×3/4 – 50 pcs; 1×1 – 25 pcs; 1¼×1¼ – 25 pcs. uPVC union fitting.",
+    "name": "Coupler (3/4\", 1\", 1¼\")",
+    "category": "CPVC Fittings",
+    "description": "Sizes: 3/4×3/4 – 100 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs; 1×3/4 – 100 pcs. Plain cylindrical coupler.",
     "unit": "Piece",
     "badge": "SERVICE UNION",
     "deal": false,
@@ -1303,7 +1232,8 @@ export const products = [
     "sizes": [
       "3/4×3/4",
       "1×1",
-      "1¼×1¼"
+      "1¼×1¼",
+      "1×3/4"
     ],
     "packetSizes": [
       "50 pcs (3/4×3/4)",
@@ -1317,16 +1247,16 @@ export const products = [
     "specifications": [
       {
         "label": "Type",
-        "value": "uPVC Union"
+        "value": "Coupler Socket"
       }
     ]
   },
   {
     "id": "gtc038",
     "code": "GTC038",
-    "name": "Union Brass Insert (3/4\", 1\", 1¼\")",
-    "category": "Brass Threaded Fittings",
-    "description": "Sizes: 3/4×3/4 – 50 pcs; 1×1 – 25 pcs; 1¼×1¼ – 25 pcs. Fitting with brass insert.",
+    "name": "Union (3/4\", 1\", 1¼\")",
+    "category": "CPVC Fittings",
+    "description": "Sizes: 3/4×3/4 – 50 pcs; 1×1 – 25 pcs; 1¼×1¼ – 25 pcs. uPVC union fitting.",
     "unit": "Piece",
     "badge": "BRASS UNION",
     "deal": true,
@@ -1348,16 +1278,16 @@ export const products = [
     "specifications": [
       {
         "label": "Type",
-        "value": "Union with Brass Insert"
+        "value": "uPVC Union"
       }
     ]
   },
   {
     "id": "gtc039",
     "code": "GTC039",
-    "name": "MTA Brass (3/4\", 1\")",
-    "category": "Brass Threaded Fittings",
-    "description": "Sizes: 3/4×1/2 – 50 pcs; 1×1/2 – 50 pcs; 1×1 – 50 pcs. External brass-thread fitting.",
+    "name": "Elbow Brass",
+    "category": "CPVC Fittings",
+    "description": "Sizes: 3/4×1/2 – 50 pcs pkt; 1×1/2 – 25 pcs pkt; 1×1 – 25 pcs pkt. Elbow fitting with brass insert.",
     "unit": "Piece",
     "badge": "BRASS MALE",
     "deal": false,
@@ -1368,9 +1298,9 @@ export const products = [
       "1×1"
     ],
     "packetSizes": [
-      "50 pcs (3/4×1/2)",
-      "50 pcs (1×1/2)",
-      "50 pcs (1×1)"
+      "50 pcs pkt (3/4×1/2)",
+      "25 pcs pkt (1×1/2)",
+      "25 pcs pkt (1×1)"
     ],
     "image": "/images/products/gtc039.jpg",
     "images": [
@@ -1378,17 +1308,17 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Thread",
-        "value": "External Brass Male Thread"
+        "label": "Type",
+        "value": "Elbow with Brass Insert"
       }
     ]
   },
   {
     "id": "gtc040",
     "code": "GTC040",
-    "name": "FTA Brass (3/4\", 1\")",
-    "category": "Brass Threaded Fittings",
-    "description": "Sizes: 3/4×1/2 – 50 pcs; 1×1/2 – 50 pcs; 1×1 – 50 pcs. Internal brass-thread fitting.",
+    "name": "MTA Brass",
+    "category": "CPVC Fittings",
+    "description": "Sizes: 3/4×1/2 – 50 pcs; 1×1/2 – 50 pcs; 1×1 – 50 pcs. External brass-thread fitting.",
     "unit": "Piece",
     "badge": "BRASS FEMALE",
     "deal": false,
@@ -1410,16 +1340,16 @@ export const products = [
     "specifications": [
       {
         "label": "Thread",
-        "value": "Internal Brass Female Thread"
+        "value": "External Brass Male Thread"
       }
     ]
   },
   {
     "id": "gtc041",
     "code": "GTC041",
-    "name": "TEE Brass (3/4\", 1\")",
-    "category": "Brass Threaded Fittings",
-    "description": "Sizes: 3/4×1/2 – 50 pcs; 1×1/2 – 50 pcs; 1×1 – 25 pcs. T fitting with brass insert.",
+    "name": "FTA Brass",
+    "category": "CPVC Fittings",
+    "description": "Sizes: 3/4×1/2 – 50 pcs; 1×1/2 – 50 pcs; 1×1 – 50 pcs. Internal brass-thread fitting.",
     "unit": "Piece",
     "badge": "BRASS TEE",
     "deal": false,
@@ -1440,25 +1370,25 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Center Branch",
-        "value": "Brass Female Thread"
+        "label": "Thread",
+        "value": "Internal Brass Female Thread"
       }
     ]
   },
   {
     "id": "gtc042",
     "code": "GTC042",
-    "name": "Tank Nipple Socket (3/4\", 1\", 1¼\")",
-    "category": "uPVC Fittings",
-    "description": "Sizes: 3/4×3/4 – 50 pcs; 1×1 – 50 pcs; 1¼×1¼ – 25 pcs. Tank nipple socket.",
+    "name": "TEE Brass",
+    "category": "CPVC Fittings",
+    "description": "Sizes: 3/4×1/2 – 50 pcs; 1×1/2 – 50 pcs; 1×1 – 25 pcs. T fitting with brass insert.",
     "unit": "Piece",
     "badge": "HEAVY TANK",
     "deal": false,
     "dealLabel": "",
     "sizes": [
-      "3/4×3/4",
-      "1×1",
-      "1¼×1¼"
+      "3/4×1/2",
+      "1×1/2",
+      "1×1"
     ],
     "packetSizes": [
       "50 pcs (3/4×3/4)",
@@ -1471,17 +1401,17 @@ export const products = [
     ],
     "specifications": [
       {
-        "label": "Connection",
-        "value": "Tank Wall Mount Socket"
+        "label": "Center Branch",
+        "value": "Brass Female Thread"
       }
     ]
   },
   {
     "id": "gtc043",
     "code": "GTC043",
-    "name": "Tank Nipple – Threaded (3/4\", 1\")",
-    "category": "uPVC Fittings",
-    "description": "Sizes: 3/4×3/4 – 50 pcs; 1×1 – 50 pcs. Threaded tank nipple.",
+    "name": "Tank Nipple Threaded",
+    "category": "CPVC Fittings",
+    "description": "High-grade CPVC double threaded tank nipple featuring heavy-duty lock nut and durable sealing washer for leak-proof hot & cold water tank outlet connections.",
     "unit": "Piece",
     "badge": "TANK CONNECTOR",
     "deal": false,
@@ -1491,8 +1421,8 @@ export const products = [
       "1×1"
     ],
     "packetSizes": [
-      "50 pcs (3/4×3/4)",
-      "50 pcs (1×1)"
+      "50 pcs packet (3/4×3/4)",
+      "50 pcs packet (1×1)"
     ],
     "image": "/images/products/gtc043.jpg",
     "images": [
@@ -1500,8 +1430,131 @@ export const products = [
     ],
     "specifications": [
       {
+        "label": "Material",
+        "value": "100% Virgin CPVC Compound"
+      },
+      {
+        "label": "Connection Type",
+        "value": "Double Male Threaded Barrel with Lock Nut"
+      }
+    ]
+  },
+  {
+    "id": "gtc044",
+    "code": "GTC044",
+    "name": "Long Plug",
+    "category": "Brass Threaded Fittings",
+    "description": "Heavy-duty 1/2 inch threaded metal long plug designed for secure pipe sealing, outlet capping, and plumbing pressure testing.",
+    "unit": "Piece",
+    "badge": "THREADED PLUG",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "1/2 Inch"
+    ],
+    "packetSizes": [
+      "100 Pcs Box (1/2\")"
+    ],
+    "image": "/images/products/gtc044.jpg",
+    "images": [
+      "/images/products/gtc044.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Heavy Duty Threaded Alloy / SS"
+      },
+      {
+        "label": "Thread Size",
+        "value": "1/2 Inch"
+      },
+      {
+        "label": "Packaging",
+        "value": "100 Pcs Box"
+      }
+    ]
+  },
+  {
+    "id": "gtc045",
+    "code": "GTC045",
+    "name": "Ball Valve – Long Handle",
+    "category": "CPVC Fittings",
+    "description": "Heavy-duty CPVC ball valve featuring an ergonomic red long-handle lever for smooth, leak-free quarter-turn water flow control.",
+    "unit": "Piece",
+    "badge": "HEAVY DUTY",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "3/4×3/4",
+      "1×1",
+      "1¼×1¼"
+    ],
+    "packetSizes": [
+      "12 pcs packing (3/4×3/4)",
+      "7 pcs packing (1×1)",
+      "5 pcs packing (1¼×1¼)"
+    ],
+    "image": "/images/products/gtc045.jpg",
+    "images": [
+      "/images/products/gtc045.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "100% Virgin CPVC Body"
+      },
+      {
+        "label": "Handle Type",
+        "value": "Red Long Lever Handle"
+      },
+      {
         "label": "Connection",
-        "value": "Threaded Tank Nipple"
+        "value": "Solvent Weld Socket"
+      }
+    ]
+  },
+  {
+    "id": "gtc046",
+    "code": "GTC046",
+    "name": "CPVC ISI Pipe – ASTM D-2846 (3 Meter)",
+    "category": "CPVC Fittings",
+    "description": "Premium 3 Meter CPVC ISI plumbing pressure pipes compliant with ASTM D-2846 / IS 15778. Engineered for high temperature resistance in hot & cold water distribution.",
+    "unit": "Length",
+    "badge": "ASTM D-2846",
+    "deal": false,
+    "dealLabel": "",
+    "sizes": [
+      "3/4\" SDR-11",
+      "1\" SDR-11",
+      "1¼\" SDR-11",
+      "3/4\" SDR-13.5",
+      "1\" SDR-13.5",
+      "1¼\" SDR-13.5"
+    ],
+    "packetSizes": [
+      "50 pcs bundle (3/4\" SDR-11)",
+      "30 pcs bundle (1\" SDR-11)",
+      "15 pcs bundle (1¼\" SDR-11)",
+      "50 pcs bundle (3/4\" SDR-13.5)",
+      "30 pcs bundle (1\" SDR-13.5)",
+      "15 pcs bundle (1¼\" SDR-13.5)"
+    ],
+    "image": "/images/products/gtc046.jpg",
+    "images": [
+      "/images/products/gtc046.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Standard",
+        "value": "ASTM D-2846 / IS 15778 (ISI Certified)"
+      },
+      {
+        "label": "Classes / Pressure Ratings",
+        "value": "SDR 11 & SDR 13.5"
+      },
+      {
+        "label": "Length",
+        "value": "3 Meter"
       }
     ]
   }

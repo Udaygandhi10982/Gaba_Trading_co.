@@ -599,11 +599,6 @@ Thank you.`;
                       >
                         <div className="aspect-square bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center p-1.5 mb-2 relative">
                           <img src={prod.image} alt={prod.name} className="max-h-full max-w-full object-contain" />
-                          {prod.badge && (
-                            <span className="absolute top-1 left-1 bg-[#F59E0B] text-[#071421] text-[8px] font-black px-1.5 py-0.5 rounded-full uppercase tracking-wider">
-                              {prod.badge}
-                            </span>
-                          )}
                         </div>
                         <div className="text-left flex-1 flex flex-col justify-between">
                           <div>

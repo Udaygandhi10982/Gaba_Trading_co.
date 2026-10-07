@@ -39,9 +39,6 @@ export default function ProductCard({ product }) {
       ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
       : null;
 
-  // Badge text — prefer dealLabel, then badge field
-  const badgeText = product.dealLabel || product.badge || null;
-
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col group">
       {/* Image Container with GTC Code Badge on Bottom-Right */}
@@ -58,15 +55,6 @@ export default function ProductCard({ product }) {
             e.target.src = `https://via.placeholder.com/400x300/071421/F59E0B?text=${encodeURIComponent(product.code || product.name)}`;
           }}
         />
-
-        {/* Top-Left Deal / Badge */}
-        {badgeText && (
-          <span className="absolute top-2 left-2 bg-[#F59E0B] text-[#071421] text-[10px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide shadow-sm">
-            {badgeText}
-          </span>
-        )}
-
-
 
         {/* Bottom-Right GTC Product Code Badge */}
         {product.code && (
